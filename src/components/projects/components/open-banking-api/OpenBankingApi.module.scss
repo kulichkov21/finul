@@ -1,0 +1,109 @@
+@import "src/variables";
+
+.container {
+  margin: $defaultVerticalDistance 0 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .header-block {
+    //margin-bottom: 80px;
+
+    //@include for-size(l) {
+    //  margin-bottom: 0;
+    //}
+
+    &__header {
+      @include h1();
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    &__caption {
+      font-family: 'Roboto';
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 36px;
+      text-align: left;
+      color: #656567;
+
+      //@include for-size(xl) {
+      //  font-size: 20px;
+      //}
+    }
+
+  }
+
+  .info-block {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+
+    //@include for-size(l) {
+    //  flex-direction: column;
+    //}
+
+    &__image {
+      //@include for-size(xl) {
+      //  width: 460px;
+      //}
+      //@include for-size(l) {
+      //  width: 400px;
+      //}
+    }
+
+    &__content {
+      max-width: 730px;
+
+      //@include for-size(xl) {
+      //  margin-left: 60px;
+      //  width: 550px;
+      //  padding: 0 20px;
+      //}
+      //
+      //@include for-size(l) {
+      //  width: unset;
+      //}
+
+
+      &__header {
+        font-family: 'Roboto';
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 45px;
+        text-align: left;
+        margin-bottom: 32px;
+      }
+
+
+      &__list {
+        list-style: none;
+
+        li {
+          display: flex;
+          font-family: 'Roboto';
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 27px;
+          text-align: left;
+          margin-bottom: 33px;
+
+
+          img {
+            margin-right: 16px;
+          }
+
+          //@include for-size(xl) {
+          //  font-size: 20px;
+          //}
+        }
+      }
+    }
+
+  }
+
+}

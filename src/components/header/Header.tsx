@@ -44,7 +44,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                         }
                     </nav>
                     <div className={styles['header__controls']}>
-                        <Button caption={'Связаться с нами'}/>
+                        <Button caption={'Связаться с нами'} type={'blue'}/>
                     </div>
                 </header>
             </div>

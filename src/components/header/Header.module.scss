@@ -25,7 +25,7 @@
     padding: 0 34px;
 
     @include for-size(xxxl) {
-      max-width: 1596px;
+      max-width: $maxCiteWidth;
     }
 
     @include for-size(l) {

@@ -1,18 +1,35 @@
 @import "./../../../variables";
 
-.accept-button {
+@mixin accept-button () {
   height: 63px;
   padding: 18px 30px 18px 30px;
   gap: 10px;
   border: 0;
   border-radius: 82px;
-  background: $mainBlueColor;
   font-family: 'Roboto';
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
   text-align: center;
   color: #FFFFFF;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.accept-button {
+  @include accept-button();
+
+  &_blue {
+    @include accept-button();
+    background-color: $mainBlueColor;
+  }
+
+  &_black {
+    @include accept-button();
+    background-color: #1C1C1C;
+  }
 
 
   &:hover {

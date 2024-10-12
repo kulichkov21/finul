@@ -23,7 +23,7 @@ const Main: React.FC = (): ReactElement => {
                     Превратите свои идеи в удобные и функциональные
                     мобильные приложения.
                 </p>
-                    <Button caption={"Связаться с нами"}/>
+                    <Button caption={"Связаться с нами"} type={'blue'}/>
                 </article>
                 <img className={styles['main__img']} src={mainImage} alt="img"/>
             </section>
