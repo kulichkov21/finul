@@ -11,7 +11,7 @@ const Main: React.FC = (): ReactElement => {
             <section className={styles['main']}>
                 <article className={styles['main__info']}>
                 <h1 className={styles['main__info__header']}>
-                    Разработка мобильных <br/> FinTeсh приложений</h1>
+                    Разработка мобильных <br/> <span className={styles['main__info__header__fintech']}>FinTeсh</span> приложений</h1>
                 <p className={styles['main__info__description']}>
                     Проектируйте и создавайте свои продукты с нами.
                     <br/>

@@ -1,0 +1,12 @@
+@import "src/variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+
+  .image {
+    @include for-size(l) {
+      max-width: 90%;
+    }
+  }
+}

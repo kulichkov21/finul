@@ -42,6 +42,10 @@
       &__header {
         @include h1();
         color: black;
+
+        &__fintech {
+          color: $mainBlueColor;
+        }
       }
 
 

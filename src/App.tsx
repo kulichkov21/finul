@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import styles from './App.module.scss';
 import {Element} from 'react-scroll'
 import HowToStart from "./components/how-to-start/HowToStart";
+import Projects from "./components/projects/Projects";
 
 
 export default class App extends React.Component<any, any> {
@@ -15,6 +16,7 @@ export default class App extends React.Component<any, any> {
                     <Main/>
                 </Element>
                 <HowToStart/>
+                <Projects/>
             </div>
         );
     }
