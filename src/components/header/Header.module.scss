@@ -1,15 +1,31 @@
 @import "src/variables";
 
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  top: 52px;
+  height: 95px;
+
+  @include for-size(l) {
+    top: 26px;
+    height: 65px;
+  }
+
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1596px;
     height: 95px;
+    width: 83.125%;
     border-radius: 100px;
     background: #F7F7F8;
 
-
+    @include for-size(l) {
+      height: 65px;
+    }
 
     &__logo {
       display: flex;
@@ -57,5 +73,4 @@
       }
     }
   }
-
-
+}

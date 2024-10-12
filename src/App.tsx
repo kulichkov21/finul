@@ -8,7 +8,7 @@ export default class App extends React.Component<any, any> {
     render() {
         return (
             <div className={styles.container}>
-                {/*<Header/>*/}
+                <Header/>
                 <Start/>
             </div>
         );

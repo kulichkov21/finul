@@ -22,6 +22,9 @@
     margin: 4vw auto 0;
     padding: 0 15px;
 
+    @include for-size(xxxl) {
+      margin-top: 6vw;
+    }
 
     @include for-size(xxl) {
       margin-top: 10.31vw;
