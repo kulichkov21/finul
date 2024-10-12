@@ -17,11 +17,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1596px;
-    height: 95px;
+    max-width: 2128px;
     width: 83.125%;
+    height: 95px;
     border-radius: 100px;
     background: #F7F7F8;
+
+    @include for-size(xxxl) {
+      max-width: 1596px;
+    }
 
     @include for-size(l) {
       height: 65px;
