@@ -5,7 +5,6 @@
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 
   .header-block {
@@ -37,9 +36,9 @@
   }
 
   .info-block {
+    width: 100%;
     margin-top: 80px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 6.265vw;
 
