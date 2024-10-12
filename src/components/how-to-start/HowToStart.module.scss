@@ -22,10 +22,6 @@
       align-items: center;
     }
 
-    //@include for-size(l) {
-    //  padding-left: 0px;
-    //}
-
     .step-container {
       max-width: 466px;
       display: flex;
@@ -38,6 +34,7 @@
         max-width: 90%;
         flex-direction: row;
         align-items: center;
+        gap: 15px;
       }
 
       .circle-container {
@@ -88,7 +85,6 @@
 
           @include for-size(l) {
             text-align: left;
-            word-break: break-word;
           }
 
         }
