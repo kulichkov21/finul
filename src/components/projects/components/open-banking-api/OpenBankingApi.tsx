@@ -50,7 +50,7 @@ const OpenBankingApi: React.FC = (): ReactElement => {
                             </p>
                         </li>
                     </ul>
-                    <Button caption={'Связаться с нами'} type={'black'}/>
+                    <Button caption={'Узнать подробнее'} type={'black'}/>
                 </article>
             </section>
         </div>
