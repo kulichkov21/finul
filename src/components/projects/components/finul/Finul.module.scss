@@ -7,14 +7,14 @@
   align-items: center;
 
   .image {
-    max-width: 100%;
+    max-width: 66.718vw;
 
     @include for-size(xl) {
-      max-width: 80%;
+      max-width: 66.718vw;
     }
 
     @include for-size(l) {
-      max-width: 60%;
+      max-width: 66.718vw;
     }
   }
 

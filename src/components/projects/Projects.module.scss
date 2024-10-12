@@ -3,5 +3,13 @@
 .container {
   margin: $defaultVerticalDistance auto;
   max-width: $maxCiteWidthPx;
-  padding: 0 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .content {
+    width: 66.718vw;
+    max-width: $maxCiteWidthPx;
+    margin: 0 8.4375vw;
+  }
 }

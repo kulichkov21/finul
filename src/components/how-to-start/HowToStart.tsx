@@ -23,7 +23,7 @@ const HowToStart: React.FC = (): ReactElement => {
 
             if (index + 1 !== steps.length) {
                 acc.push(
-                   <div className={styles.line}></div>
+                    <div className={styles.line}></div>
                 );
             }
 
@@ -33,9 +33,13 @@ const HowToStart: React.FC = (): ReactElement => {
 
     return (
         <section className={styles.container}>
-            <h2 className={styles.header}>Как начать сотрудничество</h2>
-            <div className={styles.steps}>
-                {getSteps(startSteps)}
+            <div className={styles.content}>
+                <div className={styles.info}>
+                    <h2 className={styles.header}>Как начать сотрудничество</h2>
+                    <div className={styles.steps}>
+                        {getSteps(startSteps)}
+                    </div>
+                </div>
             </div>
         </section>
     );
