@@ -14,9 +14,11 @@ export default class App extends React.Component<any, any> {
                 <Header/>
                 <Element name="aboutUs">
                     <Main/>
+                    <HowToStart/>
                 </Element>
-                <HowToStart/>
-                <Projects/>
+                <Element name="projects">
+                    <Projects/>
+                </Element>
             </div>
         );
     }

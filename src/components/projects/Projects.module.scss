@@ -1,15 +1,15 @@
 @import 'src/variables';
 
 .container {
-  margin: $defaultVerticalDistanceVw auto;
-  max-width: $maxCiteWidthPx;
+  margin-top: $defaultVerticalDistancePx;
   width: 100%;
   display: flex;
   justify-content: center;
 
   .content {
+    margin: 0 auto;
     width: 66.718vw;
-    max-width: $maxCiteWidthPx;
     margin: 0 8.4375vw;
+    max-width: $maxCiteWidthPx;
   }
 }
