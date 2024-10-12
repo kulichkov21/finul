@@ -1,0 +1,59 @@
+@import 'src/variables';
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .main {
+    width: 100%;
+    max-width: 1596px;
+    max-height: 636px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10.31vw auto 0;
+    padding: 0 15px;
+
+
+    @include for-size(xl) {
+      margin-top: 9vw;
+    }
+
+
+    &__info {
+      width: 755px;
+      padding-bottom: 8px;
+
+      &__header {
+        @include h1();
+        color: black;
+      }
+
+
+      &__description {
+        margin-top: 24px;
+        margin-bottom: 48px;
+        @include descriptionText1();
+      }
+    }
+
+    &__img {
+      width: 628px;
+      height: 628px;
+
+      @include for-size(l) {
+        height: 450px;
+        width: 450px;
+      }
+
+    }
+  }
+}
