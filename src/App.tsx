@@ -2,6 +2,7 @@ import React from 'react';
 import Start from "./components/Start/Start";
 import Header from "./components/header/Header";
 import styles from './App.module.scss';
+import {Element} from 'react-scroll'
 
 
 export default class App extends React.Component<any, any> {
@@ -9,7 +10,9 @@ export default class App extends React.Component<any, any> {
         return (
             <div className={styles.container}>
                 <Header/>
-                <Start/>
+                <Element name="aboutUs">
+                    <Start/>
+                </Element>
             </div>
         );
     }
