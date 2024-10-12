@@ -5,10 +5,12 @@ import styles from './App.module.scss';
 import {Element} from 'react-scroll'
 import HowToStart from "./components/how-to-start/HowToStart";
 import Projects from "./components/projects/Projects";
-import Processes from "./components/processes/Processes";
+import InfoCards from "./components/info-cards/InfoCards";
+import {allProcesses} from "./const/process.const";
 
 
 export default class App extends React.Component<any, any> {
+
     render() {
         return (
             <div className={styles.container}>
@@ -19,7 +21,7 @@ export default class App extends React.Component<any, any> {
                 </Element>
                 <Element name="projects">
                     <Projects/>
-                    <Processes/>
+                    <InfoCards info={allProcesses} mode={'process'}/>
                 </Element>
 
             </div>

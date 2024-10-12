@@ -1,4 +1,4 @@
-import {ArgsType} from "../../types/args.type";
+import {ArgsType} from "./../types/args.type";
 
 export const allProcesses: ArgsType[] = [
     {
