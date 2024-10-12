@@ -1,8 +1,9 @@
 import React from 'react';
-import Start from "./components/Start/Start";
+import Main from "./components/main/Main";
 import Header from "./components/header/Header";
 import styles from './App.module.scss';
 import {Element} from 'react-scroll'
+import HowToStart from "./components/how-to-start/HowToStart";
 
 
 export default class App extends React.Component<any, any> {
@@ -11,8 +12,9 @@ export default class App extends React.Component<any, any> {
             <div className={styles.container}>
                 <Header/>
                 <Element name="aboutUs">
-                    <Start/>
+                    <Main/>
                 </Element>
+                <HowToStart/>
             </div>
         );
     }

@@ -1,10 +1,10 @@
 import React, {ReactElement} from "react";
-import styles from './Start.module.scss';
+import styles from './Main.module.scss';
 import dots from './../../assets/img/dots.svg';
 import mainImage from './../../assets/img/mainImage.svg';
 import Button from "../shared/button/Button";
 
-const Start: React.FC = (): ReactElement => {
+const Main: React.FC = (): ReactElement => {
     return (
         <main className={styles.container}>
             <img className={styles.dots} src={dots} alt="dots"/>
@@ -33,4 +33,4 @@ const Start: React.FC = (): ReactElement => {
 
 }
 
-export default Start;
+export default Main;

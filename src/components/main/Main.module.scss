@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 4vw auto 0;
-    padding: 0 15px;
+    padding: 0 $minifiedHorizontalDistance;
 
     @include for-size(xxxl) {
       margin-top: 6vw;
@@ -36,7 +36,7 @@
 
 
     &__info {
-      width: 755px;
+      max-width: 755px;
       padding-bottom: 8px;
 
       &__header {
