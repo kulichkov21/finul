@@ -8,7 +8,7 @@ export default class InfoCards extends React.Component<InfoCardsProps, any> {
         return (
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <h2 className={styles.header}>Наш процесс разработки</h2>
+                    <h2 className={styles.header}>{this.props.header}</h2>
                     <section className={styles['info-cards-info']}>
                         {
                             this.props.info.map((process) => <InfoCard info={process}  mode={this.props.mode}/>)

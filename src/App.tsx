@@ -21,7 +21,7 @@ export default class App extends React.Component<any, any> {
                 </Element>
                 <Element name="projects">
                     <Projects/>
-                    <InfoCards info={allProcesses} mode={'process'}/>
+                    <InfoCards info={allProcesses} mode={'process'} header={'Наш процесс разработки'}/>
                 </Element>
 
             </div>

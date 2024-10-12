@@ -1,6 +1,7 @@
 import {ArgsType} from "./args.type";
 
 export type InfoCardsProps = {
+    header: string;
     info: ArgsType[];
     mode: 'process' | 'questionsAndAnswers'
 }
