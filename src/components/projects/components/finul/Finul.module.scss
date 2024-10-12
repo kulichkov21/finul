@@ -3,10 +3,18 @@
 .container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 
   .image {
+    max-width: 100%;
     @include for-size(l) {
       max-width: 90%;
     }
+  }
+
+  .header {
+    @include h1();
+    text-align: center;
+    color: $mainBlueColor;
   }
 }
