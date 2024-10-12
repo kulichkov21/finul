@@ -41,19 +41,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    gap: 6.265vw;
 
-    //@include for-size(l) {
-    //  flex-direction: column;
-    //}
+    @include for-size(l) {
+      gap: 0;
+    }
 
     &__image {
-      //@include for-size(xl) {
-      //  width: 460px;
-      //}
-      //@include for-size(l) {
-      //  width: 400px;
-      //}
+      @include for-size(xl) {
+        width: 29.32vw;
+      }
     }
 
     &__content {
