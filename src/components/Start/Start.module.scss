@@ -19,9 +19,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10.31vw auto 0;
+    margin: 4vw auto 0;
     padding: 0 15px;
 
+
+    @include for-size(xxxl) {
+      margin-top: 198px;
+    }
+
+    @include for-size(xxl) {
+      margin-top: 10.31vw;
+    }
 
     @include for-size(xl) {
       margin-top: 9vw;

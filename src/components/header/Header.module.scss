@@ -1,0 +1,60 @@
+@import "src/variables";
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1596px;
+    height: 95px;
+    border-radius: 100px;
+    background: #F7F7F8;
+
+
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &__text {
+        display: inline-block;
+        margin-left: 16px;
+        font-family: 'Rubik';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.44px;
+        color: white;
+      }
+
+    }
+
+    &__link {
+      text-decoration: none;
+      margin: 0 12px;
+      //ToDo changed
+      font-family: 'MontserratSemiBold';
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: -0.10000000149011612px;
+      color: white;
+
+      @include for-size(m) {
+        font-size: 14px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__controls {
+      @include for-size(l) {
+        display: none;
+      }
+    }
+  }
+
