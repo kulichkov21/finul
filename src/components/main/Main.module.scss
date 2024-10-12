@@ -14,30 +14,37 @@
 
   .main {
     width: 100%;
-    max-width: $maxCiteWidth;
+    max-width: $maxCiteWidthPx;
     max-height: 636px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 4vw auto 0;
-    padding: 0 $minifiedHorizontalDistance;
+    align-items: center;
+    margin: 198px 8.4375vw 0;
 
-    @include for-size(xxxl) {
-      margin-top: 6vw;
-    }
 
     @include for-size(xxl) {
-      margin-top: 10.31vw;
+      max-width: $maxCiteWidthVw;
+      margin-top: 10.3125vw;
     }
 
+
     @include for-size(xl) {
-      margin-top: 9vw;
+      margin-top: 14vw;
+    }
+
+
+    @include for-size(l) {
+      margin-top: 12.5vw;
     }
 
 
     &__info {
-      max-width: 755px;
+      max-width: 39.32vw;
       padding-bottom: 8px;
+
+      @include for-size(xl) {
+        max-width: unset;
+      }
 
       &__header {
         @include h1();
@@ -57,14 +64,10 @@
     }
 
     &__img {
-      width: 628px;
-      height: 628px;
-
-      @include for-size(l) {
-        height: 450px;
-        width: 450px;
-      }
-
+      width: 32.7vw;
+      height: 32.7vw;
+      max-width: 628px;
+      max-height: 628px;
     }
   }
 }

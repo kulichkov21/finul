@@ -4,7 +4,7 @@
   margin: $defaultVerticalDistance auto;
   padding: 0 $minifiedHorizontalDistance;
   width: 100%;
-  max-width: $maxCiteWidth;
+  max-width: $maxCiteWidthPx;
 
   .header {
     @include h1();

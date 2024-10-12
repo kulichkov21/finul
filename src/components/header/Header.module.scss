@@ -8,25 +8,22 @@
   top: 52px;
   height: 95px;
 
-  @include for-size(l) {
-    top: 26px;
-    height: 65px;
-  }
+  //@include for-size(l) {
+  //  top: 26px;
+  //  height: 65px;
+  //}
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 2128px;
     width: 83.125%;
     height: 95px;
     border-radius: 100px;
     background: #F7F7F8;
     padding: 0 34px;
+    max-width: $maxCiteWidthPx;
 
-    @include for-size(xxxl) {
-      max-width: $maxCiteWidth;
-    }
 
     @include for-size(l) {
       height: 65px;
