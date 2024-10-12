@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './Process.module.scss';
+import styles from './InfoCard.module.scss';
 import {ArgsType} from "../../../types/args.type";
 import graph from './../../../assets/img/graph.svg'
 import cube from './../../../assets/img/cube.svg'
@@ -14,7 +14,7 @@ const icons = new Map<string, string>([
     ['Тестирование и запуск', chart],
 ]);
 
-export default class Process extends React.Component<ArgsType, any> {
+export default class InfoCard extends React.Component<ArgsType, any> {
     render() {
         return (
             <article className={styles.container}>

@@ -1,6 +1,6 @@
 import React, {ReactElement} from 'react';
 import styles from './Processes.module.scss';
-import Process from "../shared/process/Process";
+import InfoCard from "../shared/info-card/InfoCard";
 import {allProcesses} from "./process.const";
 
 
@@ -11,7 +11,7 @@ const Processes: React.FC = (): ReactElement => {
             <h2 className={styles.header}>Наш процесс разработки</h2>
             <section className={styles['processes-info']}>
                 {
-                    allProcesses.map((process) => <Process header={process.header} caption={process.caption}/>)
+                    allProcesses.map((process) => <InfoCard header={process.header} caption={process.caption}/>)
                 }
             </section>
             </div>

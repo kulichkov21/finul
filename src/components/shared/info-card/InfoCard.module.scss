@@ -2,7 +2,6 @@
 
 .container {
   width: calc((100% - 30px)/2);
-  min-height: 236px;
   padding: 50px;
   display: flex;
   border-radius: 12px;
@@ -27,6 +26,8 @@
 
 
     &__header {
+      display: flex;
+      align-items: center;
       font-family: 'Roboto';
       font-size: 32px;
       font-weight: 500;
