@@ -22,6 +22,8 @@
     @include h1();
     text-align: center;
     color: $mainBlueColor;
+    margin-bottom: 4.765vw;
+
     @include for-size(xl) {
       max-width: 90%;
     }

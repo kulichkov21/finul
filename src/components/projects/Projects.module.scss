@@ -1,7 +1,7 @@
 @import 'src/variables';
 
 .container {
-  margin: $defaultVerticalDistance auto;
+  margin: $defaultVerticalDistanceVw auto;
   max-width: $maxCiteWidthPx;
   width: 100%;
   display: flex;
