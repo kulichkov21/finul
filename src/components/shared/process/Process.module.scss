@@ -1,0 +1,56 @@
+@import "src/variables";
+
+.container {
+  width: calc((100% - 30px)/2);
+  min-height: 236px;
+  padding: 50px;
+  display: flex;
+  border-radius: 12px;
+  border: 1px solid #262626;
+  background: #F7F7F8;
+
+  @include for-size(xl) {
+    padding: 40px;
+  }
+
+  @include for-size(l) {
+    padding: 20px 30px;
+    width: 100%;
+    height: auto;
+    min-height: unset;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+
+    &__header {
+      font-family: 'Roboto';
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 48px;
+      text-align: left;
+      color: black;
+
+      &__icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+      }
+
+    }
+
+    &__caption {
+      font-family: 'Roboto';
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: -0.006em;
+      text-align: left;
+      color: #656567;
+    }
+  }
+
+}

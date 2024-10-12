@@ -1,0 +1,33 @@
+@import "src/variables";
+
+.container {
+  margin-top: $defaultVerticalDistancePx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .content {
+    margin: 0 8.4375vw;
+    max-width: $maxCiteWidthPx;
+    width: 100%;
+  }
+
+  .header {
+    @include h1();
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .processes-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @include for-size(l) {
+      flex-direction: column;
+    }
+  }
+
+
+}
+
