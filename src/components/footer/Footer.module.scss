@@ -4,4 +4,50 @@
   width: 100%;
   background: #1C1C1C;
   margin-top: $defaultVerticalDistancePx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include for-size(xxl) {
+    margin-top: $defaultVerticalDistanceVw;
+  }
+
+  .common-info {
+    margin: 100px 8.4375vw 0;
+    max-width: 1596px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #262626;
+
+    @include for-size(xxl) {
+      margin-top: 5.2vw;
+      padding-bottom: 2.6vw;
+    }
+
+    &__navigation {
+      margin-top: 50px;
+      display: flex;
+      gap: 26px;
+
+      @include for-size(xxl) {
+        margin-top: 2.604vw;
+      }
+
+      &__link {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        color: #E4E4E7;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+  }
 }
