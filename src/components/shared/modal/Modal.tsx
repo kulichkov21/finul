@@ -1,17 +1,15 @@
-import {useEffect, useRef} from "react";
+import React, {useEffect} from "react";
 import {createPortal} from "react-dom";
 import styles from './Modal.module.scss';
 
 type ModalProps = {
-    title: string;
-    caption: string;
     onClose: () => void;
+    component: any;
 }
 
 const Modal = (props: ModalProps) => {
-    const ref: any = useRef();
     useEffect(() => {
-        const checkIfClickedOutside = (event: any)  => {
+        const checkIfClickedOutside = (event: any) => {
             if (event && event.srcElement.id === 'modal') {
                 props.onClose()
             }
@@ -32,15 +30,7 @@ const Modal = (props: ModalProps) => {
 
     return createPortal(
         <div id='modal' className={styles.modal}>
-            <div className={styles['modal-content']}>
-                <div className={styles['modal-title']}>{props.title}</div>
-                <div className={styles['modal-body']}>
-                    {props.caption}
-                </div>
-                <div className={styles['modal-footer']}>
-                    <button onClick={props.onClose}>Close</button>
-                </div>
-            </div>
+            {props.component}
         </div>,
         document.getElementById("modal-root") as Element
     )

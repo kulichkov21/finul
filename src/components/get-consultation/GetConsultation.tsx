@@ -1,9 +1,10 @@
-import React, {useState} from "react";
+import React, {ReactElement, useState} from "react";
 import styles from './GetConsultation.module.scss';
 import dots from "../../assets/img/dots2.svg";
 import Button from "../shared/button/Button";
 import {useMask} from "@react-input/mask";
 import Modal from "../shared/modal/Modal";
+import ErrorModal from "./components/ErrorModal";
 
 type GetConsultationFormState = {
     input: {
@@ -32,7 +33,7 @@ const phoneOptions = {
 const phoneRegexp = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
 
 
-export default function GetConsultation() {
+const GetConsultation: React.FC = (): ReactElement =>  {
 
     const inputPhoneRef = useMask(phoneOptions);
     const [wasButtonClickedState, setWasButtonClickedState] = useState<boolean>(false);
@@ -88,9 +89,15 @@ export default function GetConsultation() {
         setIsModalOpen(true);
     }
 
+    const errorModalComponent: () => any = () => {
+        const childComponent = <ErrorModal onClose={() => setIsModalOpen(false)}/>
+        return <Modal onClose={() => setIsModalOpen(false)} component={childComponent}/>
+    }
+
     return (
         <section className={styles.container}>
-            {isModalOpen && <Modal caption='Невозможно отправить сообщение, для решения вопроса ннапишите нам' title='Произошла ошибка' onClose={() => setIsModalOpen(false)} />}
+            {isModalOpen && errorModalComponent()}
+
             <div className={styles.content}>
                 <img className={styles.dots} src={dots} alt="dots"/>
                 <h2 className={styles.header}>Получить консультацию</h2>
@@ -144,3 +151,5 @@ export default function GetConsultation() {
         </section>
     );
 }
+
+export default GetConsultation;
