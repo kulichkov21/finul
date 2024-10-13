@@ -11,7 +11,11 @@
     width: 100%;
     max-width: $maxCiteWidthPx;
     align-items: center;
-    margin: 198px 8.4375vw 0;
+    margin: $defaultVerticalDistancePx 8.4375vw 0;
+
+    @include for-size(xxl) {
+      margin-top: $defaultVerticalDistanceVw
+    }
 
     .info {
       display: flex;
@@ -48,6 +52,7 @@
             flex-direction: row;
             align-items: center;
             gap: 15px;
+            padding: 0;
           }
 
           .circle-container {
