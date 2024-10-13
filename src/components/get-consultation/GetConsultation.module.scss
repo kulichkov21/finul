@@ -46,19 +46,27 @@
   }
 
   .get-consultation-container {
+    width: 100%;
     display: flex;
-    max-width: 594px;
+    justify-content: space-between;
     margin-top: 64px;
 
-    @include for-size(xxl) {
-      width: 30.9375vw;
+    @include for-size(l) {
+      flex-direction: column;
+      justify-content: unset;
     }
 
     form {
-      width: 100%;
+      min-width: 480px;
+      max-width: 594px;
+      width: 30.9375vw;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+
+      @include for-size(l) {
+        width: 594px;
+      }
 
       @mixin base-input() {
         padding: 8px 12px 8px 12px;
@@ -69,7 +77,7 @@
         font-weight: 400;
         line-height: 24px;
         text-align: left;
-        width: calc((100% - 14px)/ 2);
+        width: calc((100% - 14px) / 2);
         margin-bottom: 20px;
         transition: outline .1s ease-in;
       }
@@ -108,6 +116,11 @@
         color: #FEFFFA;
         margin-bottom: 48px;
 
+        span {
+          color: $mainBlueColor;
+          text-decoration: underline;
+        }
+
 
         input {
           width: 16px;
@@ -116,6 +129,48 @@
           border: 1px solid #D9D9D9
         }
 
+      }
+
+    }
+
+    .contacts {
+      min-width: 440px;
+      max-width: 542px;
+      width: 28.22vw;
+
+      @include for-size(l) {
+        margin-top: 50px;
+        width: 542px;
+      }
+
+      &__header {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.13px;
+        color: white;
+        margin-bottom: 12px;
+        text-align: left;
+      }
+
+      &__description {
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 27px;
+        text-align: left;
+        color: #FEFFFA;
+        margin-bottom: 16px;
+      }
+
+      &__mail-to, &__phone {
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+        text-decoration: underline;
+        color: $mainBlueColor;
       }
 
     }
