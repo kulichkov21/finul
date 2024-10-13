@@ -3,6 +3,7 @@ import styles from './GetConsultation.module.scss';
 import dots from "../../assets/img/dots2.svg";
 import Button from "../shared/button/Button";
 import {useMask} from "@react-input/mask";
+import Modal from "../shared/modal/Modal";
 
 type GetConsultationFormState = {
     input: {
@@ -35,6 +36,7 @@ export default function GetConsultation() {
 
     const inputPhoneRef = useMask(phoneOptions);
     const [wasButtonClickedState, setWasButtonClickedState] = useState<boolean>(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const [formState, setFormState] = useState<GetConsultationFormState>({
         input: {
@@ -83,11 +85,12 @@ export default function GetConsultation() {
     const submit: (event: any) => void = (event: any) => {
         event.preventDefault();
         setWasButtonClickedState(true);
-        console.log('hello')
+        setIsModalOpen(true);
     }
 
     return (
         <section className={styles.container}>
+            {isModalOpen && <Modal caption='Невозможно отправить сообщение, для решения вопроса ннапишите нам' title='Произошла ошибка' onClose={() => setIsModalOpen(false)} />}
             <div className={styles.content}>
                 <img className={styles.dots} src={dots} alt="dots"/>
                 <h2 className={styles.header}>Получить консультацию</h2>
