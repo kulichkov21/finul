@@ -10,12 +10,11 @@
     max-width: 66.718vw;
 
     @include for-size(xl) {
-      max-width: 66.718vw;
+      width: 55vw;
+      min-width: 680px;
     }
 
-    @include for-size(l) {
-      max-width: 66.718vw;
-    }
+
   }
 
   .header {

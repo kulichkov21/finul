@@ -47,6 +47,8 @@
     }
 
     &__image {
+      min-height: 340px;
+
       @include for-size(xl) {
         height: 41.78vw;
       }

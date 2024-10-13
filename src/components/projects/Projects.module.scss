@@ -13,16 +13,13 @@
   //}
 
   @include for-size(xl) {
-    background: linear-gradient(white 17%, #3363FF08 17% 100%);
-  }
-
-  @include for-size(l) {
     background: linear-gradient(white 15%, #3363FF08 15% 100%);
   }
 
-  @include for-size(m) {
+  @include for-size(l) {
     background: linear-gradient(white 14%, #3363FF08 14% 100%);
   }
+  
 
   .content {
     margin: 0 8.4375vw;
