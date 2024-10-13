@@ -41,8 +41,9 @@
         gap: 1.354vw;
       }
 
-      @include for-size(m) {
-        gap: 1vw;
+
+      @include for-size(s) {
+        display: none;
       }
 
 
@@ -60,7 +61,7 @@
     }
 
     &__controls {
-      @include for-size(l) {
+      @include for-size(m) {
         display: none;
       }
     }
