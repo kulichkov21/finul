@@ -33,7 +33,6 @@ const Main: React.FC = (): ReactElement => {
                 </article>
                 <img className={styles['main__img']} src={mainImage} alt="img"/>
             </section>
-            {/*<BaseCompanyInfo/>*/}
         </main>
     );
 
