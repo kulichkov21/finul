@@ -45,7 +45,25 @@
     }
   }
 
-  .get-consultation {
+  .get-consultation-container {
+    display: flex;
 
+    form {
+
+      .base-input {
+        padding: 8px 12px 8px 12px;
+        border-radius: 2px;
+        border: 1px solid #D9D9D9;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        :active {
+          border: 0;
+        }
+      }
+
+    }
   }
 }
