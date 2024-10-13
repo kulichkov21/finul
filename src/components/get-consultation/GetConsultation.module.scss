@@ -7,7 +7,7 @@
 
   .content {
     position: relative;
-    margin: $defaultVerticalDistancePx 8.4375vw;
+    margin: $defaultVerticalDistancePx 8.4375vw 0;
     max-width: $maxCiteWidthPx;
     width: 100%;
     padding: 80px;
@@ -65,7 +65,8 @@
       flex-wrap: wrap;
 
       @include for-size(l) {
-        width: 594px;
+        width: 100%;
+        max-width: unset;
       }
 
       @mixin base-input() {
@@ -140,7 +141,8 @@
 
       @include for-size(l) {
         margin-top: 50px;
-        width: 542px;
+        width: 100%;
+        max-width: unset;
       }
 
       &__header {

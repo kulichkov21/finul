@@ -3,8 +3,26 @@ import styles from './GetConsultation.module.scss';
 import dots from "../../assets/img/dots2.svg";
 import Button from "../shared/button/Button";
 
-export default class GetConsultation extends React.Component<any, any> {
-    render() {
+type GetConsultationProps = {
+    name?:  string;
+    companyName?: string;
+    email?: string;
+    phoneNumber?: string;
+    question?: string;
+
+}
+
+export default class GetConsultation extends React.Component<GetConsultationProps, any> {
+    constructor(props: GetConsultationProps) {
+        super(props);
+        this.state = {
+            isGoing: true,
+            numberOfGuests: 2
+        };
+    }
+
+
+        render() {
         return (
             <section className={styles.container}>
                 <div className={styles.content}>
