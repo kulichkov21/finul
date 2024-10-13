@@ -62,7 +62,7 @@ const GetConsultation: React.FC = (): ReactElement => {
     const onFormChange: (event: any) => void = (event: any) => {
         const field = event.target.name;
         const value = field !== 'agreeTheRules' ? event.target.value : event.target.checked;
-        let isValid = false;
+        let isValid;
         switch (field) {
             case 'phoneNumber':
                 isValid = phoneRegexp.test(value);
