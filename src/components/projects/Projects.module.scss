@@ -8,6 +8,10 @@
   justify-content: center;
   background: linear-gradient(white 18%, #3363FF08 18% 100%);
 
+  //@include for-size(xxl) {
+  //  margin-top: $defaultVerticalDistanceVw;
+  //}
+
   @include for-size(xl) {
     background: linear-gradient(white 17%, #3363FF08 17% 100%);
   }
@@ -21,7 +25,6 @@
   }
 
   .content {
-    margin: 0 auto;
     margin: 0 8.4375vw;
     max-width: $maxCiteWidthPx;
     width: 100%;
