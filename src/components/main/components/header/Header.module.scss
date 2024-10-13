@@ -1,18 +1,19 @@
-@import "../../variables";
+@import "../../../../variables";
 
 .container {
   display: flex;
   justify-content: center;
   width: 100%;
-  position: fixed;
-  top: 52px;
-  height: 95px;
-  z-index: 10;
+  margin-top: 52px;
+  max-height: 95px;
 
-  //@include for-size(l) {
-  //  top: 26px;
-  //  height: 65px;
-  //}
+  @include for-size(xxl) {
+    margin-top: 2.708vw;
+  }
+
+  @include for-size(l) {
+    margin-top: 2vw;
+  }
 
   .header {
     display: flex;

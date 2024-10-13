@@ -4,11 +4,13 @@ import dots from './../../assets/img/dots.svg';
 import mainImage from './../../assets/img/mainImage.svg';
 import Button from "../shared/button/Button";
 import {Link} from "react-scroll";
+import Header from "./components/header/Header";
 
 const Main: React.FC = (): ReactElement => {
     return (
         <main className={styles.container}>
             <img className={styles.dots} src={dots} alt="dots"/>
+            <Header/>
             <section className={styles['main']}>
                 <article className={styles['main__info']}>
                     <h1 className={styles['main__info__header']}>

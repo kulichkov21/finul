@@ -3,7 +3,8 @@
 .container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   .dots {
     position: absolute;
@@ -19,22 +20,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 198px 8.4375vw 0;
+    margin: 51px 8.4375vw 0;
 
 
     @include for-size(xxl) {
-      max-width: $maxCiteWidthVw;
-      margin-top: 10.3125vw;
+      margin-top: 2.656vw;
+      max-width: 83.125vw;
     }
 
 
     @include for-size(xl) {
-      margin-top: 14vw;
+      margin-top: 2vw;
     }
 
 
     @include for-size(l) {
-      margin-top: 12.5vw;
+      margin-top: 1.5vw;
     }
 
 
@@ -42,9 +43,6 @@
       max-width: 39.32vw;
       padding-bottom: 8px;
 
-      @include for-size(xl) {
-        max-width: unset;
-      }
 
       &__header {
         @include h1();

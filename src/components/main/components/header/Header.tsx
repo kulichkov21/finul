@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Header.module.scss"
-import Logo from "../shared/logo/Logo";
+import Logo from "../../../shared/logo/Logo";
 import {menuItems} from "./menu-items.const";
 import {Events, Link} from "react-scroll";
-import Button from "../shared/button/Button";
+import Button from "../../../shared/button/Button";
 
 type HeaderProps = {
 
