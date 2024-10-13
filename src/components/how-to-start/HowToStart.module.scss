@@ -25,6 +25,10 @@
         @include h1();
         text-align: center;
         margin-bottom: 80px;
+
+        @include for-size(xxl) {
+          margin-bottom: 4.166vw;
+        }
       }
 
       .steps {
@@ -32,7 +36,7 @@
         display: flex;
         justify-content: space-between;
 
-        @include for-size(l) {
+        @include for-size(xl) {
           flex-direction: column;
           align-items: center;
         }
@@ -46,9 +50,9 @@
           padding: 0 5px;
 
 
-          @include for-size(l) {
-            max-width: 90%;
-            width: unset;
+          @include for-size(xl) {
+            width: 100%;
+            max-width: 100%;
             flex-direction: row;
             align-items: center;
             gap: 15px;
@@ -83,6 +87,7 @@
           }
 
           .step-info {
+            width: 100%;
 
             &__header {
               margin: 30px 0 20px 0;
@@ -101,7 +106,7 @@
               line-height: 27px;
               text-align: center;
 
-              @include for-size(l) {
+              @include for-size(xl) {
                 text-align: left;
               }
 
