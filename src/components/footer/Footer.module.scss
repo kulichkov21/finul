@@ -97,8 +97,6 @@
     @include common-block-params();
     justify-content: center;
 
-
-
     &__content {
       display: flex;
       justify-content: center;
@@ -108,26 +106,27 @@
       @include for-size(xxl) {
         margin-top: 2.6vw;
       }
-    }
 
-    &__requisites {
-      width: 100%;
-      max-width: 1596px;
-      padding: 16px 30px;
-      border-radius: 100px;
-      border: 1px solid #262626;
-      background: #1A1A1A;
-
+      &__requisites {
+        width: 100%;
+        max-width: 1596px;
+        padding: 16px 30px;
+        border-radius: 100px;
+        border: 1px solid #262626;
+        background: #1A1A1A;
 
 
-      &__item {
-        font-family: 'Roboto';
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 27px;
-        text-align: center;
-        color: #B3B3B3;
+
+        &__item {
+          font-family: 'Roboto';
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 27px;
+          text-align: center;
+          color: #B3B3B3;
+        }
       }
     }
+
   }
 }

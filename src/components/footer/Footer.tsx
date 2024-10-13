@@ -41,8 +41,8 @@ const Footer: React.FC = (): ReactElement => {
 
             <section className={styles['organization-info']}>
                 <div className={styles['organization-info__content']}>
-                <div className={styles['organization-info__requisites']}>
-                    <p className={styles['organization-info__requisites__item']}>
+                <div className={styles['organization-info__content__requisites']}>
+                    <p className={styles['organization-info__content__requisites__item']}>
                         ООО «Трейд Бридж»
                         <br/>
                         Юридический адрес: Кыргызская Республика, г. Бишкек, Октябрьский район, улица Суеркулова, д. 5/1
