@@ -9,8 +9,8 @@ import Header from "./components/header/Header";
 const Main: React.FC = (): ReactElement => {
     return (
         <main className={styles.container}>
-            <img className={styles.dots} src={dots} alt="dots"/>
             <Header/>
+            <img className={styles.dots} src={dots} alt="dots"/>
             <section className={styles['main']}>
                 <article className={styles['main__info']}>
                     <h1 className={styles['main__info__header']}>

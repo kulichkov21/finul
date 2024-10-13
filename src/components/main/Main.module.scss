@@ -39,6 +39,12 @@
     }
 
 
+    @include for-size(m) {
+      max-height: unset;
+      flex-direction: column-reverse;
+    }
+
+
     &__info {
       max-width: 755px;
       width: 39.32vw;
@@ -64,6 +70,8 @@
     }
 
     &__img {
+      min-width: 400px;
+      min-height: 400px;
       width: 32.7vw;
       height: 32.7vw;
       max-width: 628px;

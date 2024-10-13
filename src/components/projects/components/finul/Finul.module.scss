@@ -23,8 +23,6 @@
     color: $mainBlueColor;
     margin-bottom: 4.765vw;
 
-    @include for-size(xl) {
-      max-width: 90%;
-    }
+
   }
 }
