@@ -6,6 +6,11 @@
   display: flex;
   justify-content: center;
 
+  @include for-size(xxl) {
+    margin-top: $defaultVerticalDistanceVw;
+  }
+
+
   .content {
     margin: 0 8.4375vw;
     max-width: $maxCiteWidthPx;

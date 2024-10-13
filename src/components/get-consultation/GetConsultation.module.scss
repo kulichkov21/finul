@@ -16,6 +16,10 @@
     z-index: 1;
     background: linear-gradient(0deg, #1C1C1C, #1C1C1C), linear-gradient(267.5deg, #1C1C1C 40.67%, rgba(28, 28, 28, 0) 99.81%);
 
+    @include for-size(xxl) {
+      margin-top: $defaultVerticalDistanceVw;
+    }
+
     &::before {
       content: '';
       position: absolute;
