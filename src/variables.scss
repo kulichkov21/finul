@@ -94,3 +94,17 @@ $backgroundColor2: #3363FF08;
   }
 
 }
+
+@mixin closeModal() {
+    opacity: 0;
+    animation: hideAni .2s ease-in;
+
+  @keyframes hideAni {
+    100% {
+      opacity: 0;
+    }
+    0% {
+      opacity: 1;
+    }
+  }
+}

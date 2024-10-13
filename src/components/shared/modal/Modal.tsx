@@ -11,7 +11,11 @@ const Modal = (props: ModalProps) => {
     useEffect(() => {
         const checkIfClickedOutside = (event: any) => {
             if (event && event.srcElement.id === 'modal') {
-                props.onClose()
+                const modal = document.getElementById("modal") as Element;
+                modal.classList.add(styles.hidden);
+                setTimeout(() => {
+                    props.onClose()
+                }, 200);
             }
         }
         document.addEventListener("click", checkIfClickedOutside)
