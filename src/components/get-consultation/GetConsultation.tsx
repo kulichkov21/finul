@@ -31,9 +31,10 @@ const phoneOptions = {
 };
 
 const phoneRegexp = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+const emailRegexp = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
 
 
-const GetConsultation: React.FC = (): ReactElement =>  {
+const GetConsultation: React.FC = (): ReactElement => {
 
     const inputPhoneRef = useMask(phoneOptions);
     const [wasButtonClickedState, setWasButtonClickedState] = useState<boolean>(false);
@@ -68,6 +69,9 @@ const GetConsultation: React.FC = (): ReactElement =>  {
                 break;
             case 'agreeTheRules':
                 isValid = value;
+                break;
+            case 'email':
+                isValid = emailRegexp.test(value);
                 break;
             case 'question':
                 isValid = true;
