@@ -48,22 +48,12 @@
 
     &__image {
       @include for-size(xl) {
-        width: 29.32vw;
+        height: 41.78vw;
       }
     }
 
     &__content {
-      max-width: 730px;
-
-      //@include for-size(xl) {
-      //  margin-left: 60px;
-      //  width: 550px;
-      //  padding: 0 20px;
-      //}
-      //
-      //@include for-size(l) {
-      //  width: unset;
-      //}
+      max-width: 794px;
 
 
       &__header {

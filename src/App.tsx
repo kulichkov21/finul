@@ -7,6 +7,7 @@ import HowToStart from "./components/how-to-start/HowToStart";
 import Projects from "./components/projects/Projects";
 import InfoCards from "./components/info-cards/InfoCards";
 import {allProcesses} from "./const/process.const";
+import GetConsultation from "./components/get-consultation/GetConsultation";
 
 
 export default class App extends React.Component<any, any> {
@@ -23,7 +24,7 @@ export default class App extends React.Component<any, any> {
                     <Projects/>
                     <InfoCards info={allProcesses} mode={'process'} header={'Наш процесс разработки'}/>
                 </Element>
-
+                <GetConsultation/>
             </div>
         );
     }

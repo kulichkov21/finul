@@ -5,6 +5,13 @@ import listImg from './../../../../assets/img/check.svg'
 import Button from "../../../shared/button/Button";
 
 const OpenBankingApi: React.FC = (): ReactElement => {
+
+    const advantages: string[] = [
+        'Возможности мгновенно подключаться к различным банковским серверам и получать необходимые данные',
+        'Многократное сокращение времени и стоимости вывода новых продуктов на рынок — банки получают доступ к новейшим технологиям, не тратя внутренние ресурсы на их разработку',
+        'Бесшовный обмен данными о клиенте (с его согласия) между банками и другими финтех-компаниям, для формирования наиболее выгодных персональных предложений',
+    ];
+
     return (
         <div className={styles.container}>
             <div className={styles['header-block']}>
@@ -24,31 +31,15 @@ const OpenBankingApi: React.FC = (): ReactElement => {
                 <article className={styles['info-block__content']}>
                     <h4 className={styles['info-block__content__header']}>Преимущества Open Api для банков</h4>
                     <ul className={styles['info-block__content__list']}>
-                        <li><img src={listImg} alt="check"/>
-                            <p>
-                                Возможности мгновенно подключаться к различным банковским серверам и получать
-                                необходимые
-                                данные
-                            </p>
-                        </li>
-                        <li><img src={listImg} alt="check"/>
-                            <p>
-                                Универсальное мобильное приложение для клиентов по управлению финансами в нескольких
-                                организациях сразу
-                            </p>
-                        </li>
-                        <li><img src={listImg} alt="check"/>
-                            <p>
-                                Многократное сокращение времени и стоимости вывода новых продуктов на рынок — банки
-                                получают доступ к новейшим технологиям, не тратя внутренние ресурсы на их разработку
-                            </p>
-                        </li>
-                        <li><img src={listImg} alt="check"/>
-                            <p>
-                                Бесшовный обмен данными о клиенте (с его согласия) между банками и другими
-                                финтех-компаниям, для формирования наиболее выгодных персональных предложений
-                            </p>
-                        </li>
+                        {
+                            advantages.map((listItem) => {
+                                return (<li><img src={listImg} alt="check"/>
+                                    <p>
+                                        {listItem}
+                                    </p>
+                                </li>);
+                            })
+                        }
                     </ul>
                     <Button caption={'Узнать подробнее'} type={'black'}/>
                 </article>
