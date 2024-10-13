@@ -91,6 +91,11 @@
       .base-input {
         @include base-input();
 
+        &_error {
+          @include base-input();
+          outline: 2px solid red;
+        }
+
         &:focus-visible {
           outline: 2px solid #338BFF;
         }
@@ -122,12 +127,21 @@
           text-decoration: underline;
         }
 
-
-        input {
+        @mixin checkbox() {
           width: 16px;
           height: 16px;
           border-radius: 2px;
-          border: 1px solid #D9D9D9
+          border: 1px solid #D9D9D9;
+          transition: outline .1s ease-in;
+        }
+
+        .checkbox {
+         @include checkbox();
+
+          &_error {
+            @include checkbox();
+            outline: 2px solid red;
+          }
         }
 
       }

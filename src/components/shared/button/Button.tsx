@@ -6,7 +6,7 @@ export default class Button extends React.Component<ButtonPropsType, any> {
     render() {
         const className = 'accept-button_' + this.props.type;
         return (
-            <button className={styles[className]}>{this.props.caption}</button>
+            <button onClick={this.props.onClick} className={styles[className]}>{this.props.caption}</button>
         );
     }
 }
