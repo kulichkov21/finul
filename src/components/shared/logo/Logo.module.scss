@@ -16,11 +16,23 @@
     height: 40px;
   }
 
-  .caption {
+  @mixin caption-base() {
     font-family: 'Montserrat';
     font-size: 32px;
     font-weight: 900;
     line-height: 39px;
     color: $mainBlueColor;
+  }
+
+  .caption {
+    @include caption-base();
+
+    &_can-hide {
+      @include caption-base();
+
+      @include for-size(m) {
+        display: none;
+      }
+    }
   }
 }

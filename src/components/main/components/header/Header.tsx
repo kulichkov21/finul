@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Header.module.scss"
 import Logo from "../../../shared/logo/Logo";
 import {menuItems} from "../../../../const/menu-items.const";
-import {Events, Link} from "react-scroll";
+import {Events, Link, animateScroll as scroll} from "react-scroll";
 import Button from "../../../shared/button/Button";
 
 type HeaderProps = {
@@ -20,6 +20,9 @@ export default class Header extends React.Component<HeaderProps, any> {
 
         Events.scrollEvent.register("end", function () {
         });
+
+        scroll.scrollTo(1);
+        scroll.scrollTo(0);
     }
 
     componentWillUnmount() {
@@ -31,7 +34,7 @@ export default class Header extends React.Component<HeaderProps, any> {
         return (
             <div className={styles.container}>
                 <header className={styles.header}>
-                    <Logo/>
+                    <Logo canHideCaption={true}/>
                     <nav className={styles.menu}>
                         {
                             menuItems.map((item) => {

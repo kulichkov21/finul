@@ -20,20 +20,30 @@
     justify-content: space-between;
     align-items: center;
     width: 83.125%;
-    height: 95px;
+    max-height: 95px;
+    min-height: 80px;
     border-radius: 100px;
     background: #F7F7F8;
     padding: 0 34px;
     max-width: $maxCiteWidthPx;
 
-
-    @include for-size(l) {
-      height: 65px;
+    @include for-size(xxl) {
+      height: 4.947vw;
     }
+
 
     .menu {
       display: flex;
+      min-width: 440px;
       gap: 26px;
+
+      @include for-size(xxl) {
+        gap: 1.354vw;
+      }
+
+      @include for-size(m) {
+        gap: 1vw;
+      }
 
 
       &__link {
