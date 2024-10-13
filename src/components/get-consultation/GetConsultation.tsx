@@ -79,6 +79,7 @@ export default function GetConsultation() {
         setFormState({input: newStateInput, errors: newStateErrors});
     }
 
+
     const submit: (event: any) => void = (event: any) => {
         event.preventDefault();
         setWasButtonClickedState(true);
@@ -115,7 +116,12 @@ export default function GetConsultation() {
                                    onChange={onFormChange} type="checkbox"/>
                             Даю согласие на <span>обработку персональных данных</span>
                         </label>
-                        <Button caption='Отправить' type='blue' onClick={submit}/>
+                        {Object.values(formState.errors).some((field) => field) && wasButtonClickedState ?
+                            (<p className={styles['user-message']}>Заполните обязательные поля</p>) : null
+                        }
+                        <div className={styles['form-button']}>
+                            <Button caption='Отправить' type='blue' onClick={submit}/>
+                        </div>
                     </form>
                     <aside className={styles.contacts}>
                         <h3 className={styles['contacts__header']}>Удобнее связаться напрямую?</h3>

@@ -120,7 +120,6 @@
         line-height: 22px;
         text-align: left;
         color: #FEFFFA;
-        margin-bottom: 48px;
 
         span {
           color: $mainBlueColor;
@@ -144,6 +143,23 @@
           }
         }
 
+      }
+
+
+      .user-message {
+        width: 100%;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: -0.006em;
+        text-align: left;
+        color: #FEFFFA;
+        margin-top: 10px;
+      }
+
+      .form-button {
+        margin-top: 48px;
       }
 
     }
