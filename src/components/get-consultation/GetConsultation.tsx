@@ -86,6 +86,9 @@ const GetConsultation: React.FC = (): ReactElement =>  {
     const submit: (event: any) => void = (event: any) => {
         event.preventDefault();
         setWasButtonClickedState(true);
+        if (Object.values(formState.errors).some((field) => field)) {
+            return;
+        }
         setIsModalOpen(true);
     }
 

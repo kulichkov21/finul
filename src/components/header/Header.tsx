@@ -16,11 +16,9 @@ export default class Header extends React.Component<HeaderProps, any> {
     }
     componentDidMount() {
         Events.scrollEvent.register("begin", function () {
-            console.log("begin", arguments);
         });
 
         Events.scrollEvent.register("end", function () {
-            console.log("end", arguments);
         });
     }
 
@@ -38,13 +36,15 @@ export default class Header extends React.Component<HeaderProps, any> {
                         {
                             menuItems.map((item) => {
                                 return <span className={styles['menu__link']}>
-                                    <Link activeClass="menu__link__active" spy={true} smooth={true} duration={250} delay={100} to={item.link}>{item.caption}</Link>
+                                    <Link activeClass="menu__link__active" spy={true} smooth={true} duration={500} delay={100} to={item.link}>{item.caption}</Link>
                                     </span>
                             })
                         }
                     </nav>
                     <div className={styles['header__controls']}>
+                        <Link spy={true} smooth={true} duration={500} delay={100} to={'getConsultation'}>
                         <Button caption={'Связаться с нами'} type={'blue'}/>
+                        </Link>
                     </div>
                 </header>
             </div>

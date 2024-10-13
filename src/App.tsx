@@ -24,7 +24,9 @@ export default class App extends React.Component<any, any> {
                     <Projects/>
                     <InfoCards info={allProcesses} mode={'process'} header={'Наш процесс разработки'}/>
                 </Element>
-                <GetConsultation/>
+                <Element name="getConsultation">
+                    <GetConsultation/>
+                </Element>
             </div>
         );
     }
