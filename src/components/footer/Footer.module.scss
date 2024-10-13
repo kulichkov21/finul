@@ -13,7 +13,6 @@
   }
 
   @mixin common-block-params() {
-    max-width: 1596px;
     width: 100%;
     display: flex;
     padding-bottom: 50px;
@@ -96,19 +95,29 @@
 
   .organization-info {
     @include common-block-params();
-    margin: 50px 8.4375vw 0;
     justify-content: center;
 
-    @include for-size(xxl) {
-      margin-top: 2.6vw;
+
+
+    &__content {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 50px 8.4375vw 0;
+
+      @include for-size(xxl) {
+        margin-top: 2.6vw;
+      }
     }
 
     &__requisites {
       width: 100%;
+      max-width: 1596px;
       padding: 16px 30px;
       border-radius: 100px;
       border: 1px solid #262626;
       background: #1A1A1A;
+
 
 
       &__item {
