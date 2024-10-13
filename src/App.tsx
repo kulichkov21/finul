@@ -5,8 +5,9 @@ import styles from './App.module.scss';
 import {Element} from 'react-scroll'
 import HowToStart from "./components/how-to-start/HowToStart";
 import Projects from "./components/projects/Projects";
-import InfoCards from "./components/info-cards/InfoCards";
+import InfoCards from "./components/shared/info-cards/InfoCards";
 import {allProcesses} from "./const/process.const";
+import {questionsAndAnswers} from "./const/questionsAndAnswers.const";
 import GetConsultation from "./components/get-consultation/GetConsultation";
 
 
@@ -26,6 +27,9 @@ export default class App extends React.Component<any, any> {
                 </Element>
                 <Element name="getConsultation">
                     <GetConsultation/>
+                </Element>
+                <Element name="questionsAndAnswers">
+                    <InfoCards info={questionsAndAnswers} mode={'questionsAndAnswers'} header={'Вопросы и ответы'}/>
                 </Element>
             </div>
         );

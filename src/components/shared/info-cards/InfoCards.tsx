@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './InfoCards.module.scss';
-import InfoCard from "../shared/info-card/InfoCard";
-import {InfoCardsProps} from "../../types/info-cards.type";
+import InfoCard from "../info-card/InfoCard";
+import {InfoCardsProps} from "../../../types/info-cards.type";
 
 export default class InfoCards extends React.Component<InfoCardsProps, any> {
     render() {
