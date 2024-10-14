@@ -24,7 +24,7 @@ function ErrorModal(props: ErrorModalProps): ReactElement {
                href="mailto:contact@businesscity.ru">contact@businesscity.ru</a>
         </div>
         <div className={styles.footer}>
-            <Button onClick={onCloseHandler} caption='Закрыть' type='black_small'/>
+            <Button onClick={onCloseHandler} caption='Закрыть'/>
         </div>
     </div>
     );

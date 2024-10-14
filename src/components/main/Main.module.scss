@@ -1,31 +1,32 @@
 @import 'src/variables';
 
 .container {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(225.17deg, #11C6F9 0.3%, #2280D8 39.59%, #3636B2 100%);
 
-  .dots {
+  .rounds {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
   }
 
   .main {
-    width: 100%;
+    position: relative;
+    z-index: 10;
+    width: 83.125vw;
     max-width: $maxCiteWidthPx;
-    max-height: 636px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 51px 8.4375vw 0;
+    margin: 100px 8.4375vw 0;
 
 
     @include for-size(xxl) {
-      margin-top: 2.656vw;
-      max-width: 83.125vw;
+      margin-top: 5.2vw;
     }
 
 
@@ -34,48 +35,74 @@
     }
 
 
-    @include for-size(l) {
-      margin-top: 1.5vw;
+    @include for-size(m) {
+      margin-top: 0
     }
 
 
-    @include for-size(m) {
+    @include for-size(l) {
       max-height: unset;
-      flex-direction: column-reverse;
+      flex-direction: column;
+      align-items: center;
     }
 
 
     &__info {
-      max-width: 755px;
+      margin-top: 30px;
+      max-width: 661px;
       width: 39.32vw;
       min-width: 550px;
       padding-bottom: 8px;
 
+      @include for-size(xxl) {
+        margin-top: 1.5625vw;
+      }
+
+
+      @include for-size(xl) {
+        margin-bottom: 40px;
+      }
+
+      @include for-size(l) {
+        max-width: 100%;
+        width: 100%;
+      }
+
 
       &__header {
         @include h1();
-        color: black;
-
-        &__fintech {
-          color: $mainBlueColor;
-        }
+        margin-bottom: 24px;
+        color: white;
       }
 
 
       &__description {
-        margin-top: 24px;
-        margin-bottom: 48px;
-        @include descriptionText1();
+        margin: 24px 0 74px;
+        font-family: 'Rubik';
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: -0.20px;
+        text-align: left;
+        color: white;
+        opacity: 0.65;
+
+        @include for-size(xxl) {
+          margin-bottom: 3.854vw;
+        }
       }
     }
 
-    &__img {
-      min-width: 400px;
-      min-height: 400px;
-      width: 32.7vw;
-      height: 32.7vw;
-      max-width: 628px;
-      max-height: 628px;
+    &__img-container {
+      display: flex;
+      align-items: end;
+
+      img {
+        max-width: 564px;
+        max-height: 782px;
+        height: 40.729vw;
+        width: 29.375vw;
+      }
     }
   }
 }

@@ -137,7 +137,7 @@ const GetConsultation: React.FC = (): ReactElement => {
                             (<p className={styles['user-message']}>Заполните обязательные поля</p>) : null
                         }
                         <div className={styles['form-button']}>
-                            <Button caption='Отправить' type='blue' onClick={submit}/>
+                            <Button caption='Отправить' onClick={submit}/>
                         </div>
                     </form>
                     <aside className={styles.contacts}>

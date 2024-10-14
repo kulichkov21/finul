@@ -1,21 +1,20 @@
 import React, {ReactElement} from "react";
 import styles from './Main.module.scss';
-import dots from './../../assets/img/dots.svg';
-import mainImage from './../../assets/img/mainImage.svg';
+import phone3 from './../../assets/img/phone3.png';
 import Button from "../shared/button/Button";
 import {Link} from "react-scroll";
 import Header from "./components/header/Header";
+import rounds from './../../assets/img/rounds.svg';
 
 const Main: React.FC = (): ReactElement => {
     return (
         <main className={styles.container}>
             <Header/>
-            <img className={styles.dots} src={dots} alt="dots"/>
+            <img className={styles.rounds} src={rounds} alt="dots"/>
             <section className={styles['main']}>
                 <article className={styles['main__info']}>
                     <h1 className={styles['main__info__header']}>
-                        Разработка мобильных <br/> <span
-                        className={styles['main__info__header__fintech']}>FinTeсh</span> приложений</h1>
+                        Разработка мобильных FinTech приложений</h1>
                     <p className={styles['main__info__description']}>
                         Проектируйте и создавайте свои продукты с нами.
                         <br/>
@@ -27,11 +26,15 @@ const Main: React.FC = (): ReactElement => {
                         Превратите свои идеи в удобные и функциональные
                         мобильные приложения.
                     </p>
+
                     <Link spy={true} smooth={true} duration={500} delay={100} to={'getConsultation'}>
-                        <Button caption={'Связаться с нами'} type={'blue'}/>
+                        <Button caption={'Связаться с нами'}/>
                     </Link>
                 </article>
-                <img className={styles['main__img']} src={mainImage} alt="img"/>
+                <aside className={styles['main__img-container']}>
+                    <img className={styles['main__img']} src={phone3} alt="img"/>
+                </aside>
+
             </section>
         </main>
     );

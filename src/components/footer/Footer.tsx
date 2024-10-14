@@ -11,7 +11,7 @@ const Footer: React.FC = (): ReactElement => {
     return (
         <footer className={styles.container}>
             <section className={styles['common-info']}>
-                <Logo canHideCaption={false}/>
+                <Logo canHideCaption={false} fontColor={'black'}/>
                 <nav className={styles['common-info__navigation']}>
                     {
                         menuItems.map((item) => {

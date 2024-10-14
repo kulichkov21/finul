@@ -44,7 +44,7 @@ const OpenBankingApi: React.FC = (): ReactElement => {
                         }
                     </ul>
                     <Link spy={true} smooth={true} duration={500} delay={100} to={'getConsultation'}>
-                    <Button caption={'Узнать подробнее'} type={'black'}/>
+                    <Button caption={'Узнать подробнее'}/>
                     </Link>
                 </article>
             </section>

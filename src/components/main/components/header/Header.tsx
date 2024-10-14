@@ -34,19 +34,19 @@ export default class Header extends React.Component<HeaderProps, any> {
         return (
             <div className={styles.container}>
                 <header className={styles.header}>
-                    <Logo canHideCaption={true}/>
+                    <Logo canHideCaption={true} fontColor={'white'}/>
                     <nav className={styles.menu}>
                         {
                             menuItems.map((item) => {
                                 return <span className={styles['menu__link']}>
-                                    <Link activeClass="menu__link__active" spy={true} smooth={true} duration={500} delay={100} to={item.link}>{item.caption}</Link>
+                                    <Link spy={true} smooth={true} duration={500} delay={100} to={item.link}>{item.caption}</Link>
                                     </span>
                             })
                         }
                     </nav>
                     <div className={styles['header__controls']}>
                         <Link spy={true} smooth={true} duration={500} delay={100} to={'getConsultation'}>
-                        <Button caption={'Связаться с нами'} type={'blue'}/>
+                        <Button caption={'Связаться с нами'}/>
                         </Link>
                     </div>
                 </header>

@@ -4,54 +4,52 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 52px;
-  max-height: 95px;
+  margin-top: 24px;
+  max-height: 50px;
 
-  @include for-size(xxl) {
-    margin-top: 2.708vw;
-  }
-
-  @include for-size(l) {
-    margin-top: 2vw;
-  }
+  //@include for-size(xxl) {
+  //  margin-top: 2.708vw;
+  //}
+  //
+  //@include for-size(l) {
+  //  margin-top: 2vw;
+  //}
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 83.125%;
-    max-height: 95px;
-    min-height: 80px;
-    border-radius: 100px;
-    background: #F7F7F8;
-    padding: 0 34px;
+    width: 83.125vw;
     max-width: $maxCiteWidthPx;
-
-    @include for-size(xxl) {
-      height: 4.947vw;
-    }
+    //
+    //@include for-size(xxl) {
+    //  height: 4.947vw;
+    //}
 
 
     .menu {
       display: flex;
       min-width: 440px;
-      gap: 26px;
+      gap: 24px;
 
-      @include for-size(xxl) {
-        gap: 1.354vw;
-      }
-
-
-      @include for-size(s) {
-        display: none;
-      }
+      //@include for-size(xxl) {
+      //  gap: 1.354vw;
+      //}
+      //
+      //
+      //@include for-size(s) {
+      //  display: none;
+      //}
 
 
       &__link {
-        font-family: 'Roboto';
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 27px;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: -0.1px;
+        color: white;
+
 
         &:hover {
           cursor: pointer;
@@ -61,9 +59,9 @@
     }
 
     &__controls {
-      @include for-size(m) {
-        display: none;
-      }
+      //@include for-size(m) {
+      //  display: none;
+      //}
     }
   }
 }

@@ -9,28 +9,47 @@
   }
 
   .img {
-    width: 40px;
+    width: 42px;
     height: 40px;
   }
 
   @mixin caption-base() {
-    font-family: 'Montserrat';
-    font-size: 32px;
-    font-weight: 900;
-    line-height: 39px;
+    font-family: 'Rubik';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.44px;
+    letter-spacing: -0.13px;
+    text-align: left;
     margin-left: 16px;
-    color: $mainBlueColor;
   }
 
   .caption {
-    @include caption-base();
 
-    &_can-hide {
+    &_black {
       @include caption-base();
+      color: #161C2D;
 
-      @include for-size(l) {
-        display: none;
+      &_can-hide {
+        @include caption-base();
+        color: #161C2D;
+        @include for-size(l) {
+          display: none;
+        }
       }
     }
+
+    &_white {
+      @include caption-base();
+      color: white;
+
+      &_can-hide {
+        @include caption-base();
+        color: white;
+        @include for-size(l) {
+          display: none;
+        }
+      }
+    }
+
   }
 }
