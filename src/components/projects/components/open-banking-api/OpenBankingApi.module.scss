@@ -11,6 +11,7 @@
   }
 
   .header-block {
+    width: 100%;
 
     &__header {
       @include h1();

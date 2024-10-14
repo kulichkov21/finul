@@ -12,8 +12,7 @@
   }
 
   .content {
-    margin: 0 8.4375vw;
     max-width: $maxCiteWidthPx;
-    width: 100%;
+    width: $maxContentWidthVw;
   }
 }
