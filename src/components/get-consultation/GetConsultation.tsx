@@ -106,7 +106,6 @@ const GetConsultation: React.FC = (): ReactElement => {
             {isModalOpen && errorModalComponent()}
 
             <div className={styles.content}>
-                <img className={styles.dots} src={dots} alt="dots"/>
                 <h2 className={styles.header}>Получить консультацию</h2>
                 <div className={styles['get-consultation-container']}>
                     <form>

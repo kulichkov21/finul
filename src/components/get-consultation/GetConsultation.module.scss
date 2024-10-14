@@ -4,48 +4,26 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  background: #F4F7FA;
 
   .content {
     position: relative;
-    margin: $defaultVerticalDistancePx 8.4375vw 0;
+    margin: 70px 8.4375vw;
     max-width: $maxCiteWidthPx;
     width: 100%;
     padding: 80px;
-    border-radius: 20px;
-    border: 1px solid;
-    z-index: 1;
-    background: linear-gradient(0deg, #1C1C1C, #1C1C1C), linear-gradient(267.5deg, #1C1C1C 40.67%, rgba(28, 28, 28, 0) 99.81%);
 
     @include for-size(xxl) {
-      margin-top: $defaultVerticalDistanceVw;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 10px;
-      width: 10px;
-      clip-path: polygon(100% 0, 0% 100%, 0 0);
-      background-color: white;
-    }
-
-    @include for-size(xxl) {
+      margin: 3.645vw 8.4375vw;
       padding: 4.166vw;
     }
 
-    .dots {
-      position: absolute;
-      top: 2px;
-      left: 2px;
-      z-index: -1;
-    }
 
     .header {
       @include h1();
-      color: white;;
+      line-height: 58px;
+      color: #161C2D;
+      text-align: center;
     }
   }
 
@@ -77,7 +55,7 @@
         padding: 8px 12px 8px 12px;
         border-radius: 2px;
         border: 1px solid #D9D9D9;
-        font-family: 'Roboto';
+        font-family: 'Rubik';
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
@@ -101,7 +79,7 @@
         }
 
         &:focus-visible {
-          outline: 2px solid #338BFF;
+          outline: 2px solid #161C2D;
         }
       }
 
@@ -109,7 +87,7 @@
         @include big-input();
 
         &:focus-visible {
-          outline: 2px solid #338BFF;
+          outline: 2px solid #161C2D;
         }
       }
 
@@ -118,15 +96,15 @@
         display: flex;
         align-items: center;
         gap: 3px;
-        font-family: 'Roboto';
-        font-size: 14px;
+        font-family: 'Rubik';
+        font-size: 16px;
         font-weight: 400;
         line-height: 22px;
         text-align: left;
-        color: #FEFFFA;
+        color: #656567;
 
         span {
-          color: $mainBlueColor;
+          color: $mainRedColor;
           text-decoration: underline;
         }
 
@@ -139,7 +117,7 @@
         }
 
         .checkbox {
-         @include checkbox();
+          @include checkbox();
 
           &_error {
             @include checkbox();
@@ -155,10 +133,9 @@
         font-family: 'Roboto';
         font-size: 16px;
         font-weight: 400;
-        line-height: 27px;
-        letter-spacing: -0.006em;
+        line-height: 22px;
         text-align: left;
-        color: #FEFFFA;
+        color: black;
         margin-top: 10px;
       }
 
@@ -180,22 +157,23 @@
       }
 
       &__header {
-        font-family: 'Roboto';
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 28.13px;
-        color: white;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 48px;
+        text-align: left;
+        color: black;
         margin-bottom: 12px;
         text-align: left;
       }
 
       &__description {
-        font-family: 'Roboto';
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 27px;
+        font-family: Rubik;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
         text-align: left;
-        color: #FEFFFA;
+        color: #656567;
         margin-bottom: 16px;
       }
 
@@ -206,7 +184,7 @@
         line-height: 30px;
         text-align: left;
         text-decoration: underline;
-        color: $mainBlueColor;
+        color: $mainRedColor;
       }
 
     }
