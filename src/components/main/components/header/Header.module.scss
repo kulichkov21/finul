@@ -9,39 +9,28 @@
   margin-top: 24px;
   max-height: 50px;
 
-  //@include for-size(xxl) {
-  //  margin-top: 2.708vw;
-  //}
-  //
-  //@include for-size(l) {
-  //  margin-top: 2vw;
-  //}
-
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 83.125vw;
     max-width: $maxCiteWidthPx;
-    //
-    //@include for-size(xxl) {
-    //  height: 4.947vw;
-    //}
 
 
     .menu {
       display: flex;
-      min-width: 440px;
+      justify-content: space-between;
+      //min-width: 440px;
       gap: 24px;
 
-      //@include for-size(xxl) {
-      //  gap: 1.354vw;
-      //}
-      //
-      //
-      //@include for-size(s) {
-      //  display: none;
-      //}
+      @include for-size(xxl) {
+        gap: 1.25vw;
+      }
+
+
+      @include for-size(xs) {
+        display: none;
+      }
 
 
       &__link {
@@ -61,9 +50,9 @@
     }
 
     &__controls {
-      //@include for-size(m) {
-      //  display: none;
-      //}
+      @include for-size(s) {
+        display: none;
+      }
     }
   }
 }

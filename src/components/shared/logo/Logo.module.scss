@@ -45,7 +45,7 @@
       &_can-hide {
         @include caption-base();
         color: white;
-        @include for-size(l) {
+        @include for-size(m) {
           display: none;
         }
       }
