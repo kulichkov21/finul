@@ -21,7 +21,7 @@
   .common-info {
     @include common-block-params();
     margin-top: $defaultVerticalDistancePx;
-    width: 81.25vw;
+    width: 83.125vw;
     max-width: $maxCiteWidthPx;
     flex-direction: column;
     align-items: center;
@@ -58,7 +58,7 @@
   .contacts {
     @include common-block-params();
     margin-top: 50px;
-    width: 81.25vw;
+    width: 83.15vw;
     max-width: $maxCiteWidthPx;
     border-bottom: 1px solid #D8D8D8;
     justify-content: center;
@@ -97,7 +97,7 @@
     @include common-block-params();
     justify-content: center;
     margin-top: 50px;
-    width: 81.25vw;
+    width: 83.125vw;
     max-width: $maxCiteWidthPx;
 
     @include for-size(xxl) {
