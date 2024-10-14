@@ -9,7 +9,7 @@ $minifiedHorizontalDistance: 15px;
 
 $mainHeader1FontSize: 48px;
 $minifiedHeader1FontSize: 32px;
-$mainHeader1LineHeight: 58px;
+$mainHeader1LineHeight: 65px;
 $minifiedHeader1LineHeight: 38px;
 $mainHeader2FontSize: 32px;
 $mainHeader2LineHeight: 48px;
@@ -19,7 +19,6 @@ $mainHeader4FontSize: 24px;
 $mainHeader4LineHeight: 28px;
 
 $maxCiteWidthPx: 1596px;
-
 
 
 //colors
@@ -40,10 +39,13 @@ $backgroundColor2: #3363FF08;
   letter-spacing: -1.8px;
 
 
-
-  //@include for-size(l) {
-  //  font-size: $minifiedHeader1FontSize;
-  //  line-height: $minifiedHeader1LineHeight;
+  //@include for-size(xxl) {
+  //  font-size: 2.5vw;
+  //  line-height: 3.38vw;
+  //}
+  //
+  //@include for-size(xl) {
+  //  letter-spacing: 0px;
   //}
 }
 
@@ -101,8 +103,8 @@ $backgroundColor2: #3363FF08;
 }
 
 @mixin closeModal() {
-    opacity: 0;
-    animation: hideAni .2s ease-in;
+  opacity: 0;
+  animation: hideAni .2s ease-in;
 
   @keyframes hideAni {
     100% {
