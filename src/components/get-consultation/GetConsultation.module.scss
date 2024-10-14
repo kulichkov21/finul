@@ -135,7 +135,7 @@
         font-weight: 400;
         line-height: 22px;
         text-align: left;
-        color: black;
+        color: #656567;
         margin-top: 10px;
       }
 
@@ -178,12 +178,12 @@
       }
 
       &__mail-to, &__phone {
-        font-family: Roboto;
+        font-family: 'Rubik';
         font-size: 20px;
         font-weight: 500;
         line-height: 30px;
         text-align: left;
-        text-decoration: underline;
+        text-decoration: none;
         color: $mainRedColor;
       }
 
