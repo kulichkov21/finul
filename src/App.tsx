@@ -1,6 +1,5 @@
 import React from 'react';
 import Main from "./components/main/Main";
-import Header from "./components/main/components/header/Header";
 import styles from './App.module.scss';
 import {Element} from 'react-scroll'
 import HowToStart from "./components/how-to-start/HowToStart";
