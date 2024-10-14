@@ -16,29 +16,22 @@
   }
 
   .header-block {
-    //margin-bottom: 80px;
-
-    //@include for-size(l) {
-    //  margin-bottom: 0;
-    //}
 
     &__header {
       @include h1();
       text-align: center;
       margin-bottom: 32px;
+      line-height: 58px;
+      color: #161C2D;
     }
 
     &__caption {
-      font-family: 'Roboto';
+      font-family: 'Rubik';
       font-size: 24px;
       font-weight: 400;
       line-height: 36px;
-      text-align: left;
+      text-align: center;
       color: #656567;
-
-      //@include for-size(xl) {
-      //  font-size: 20px;
-      //}
     }
 
   }
@@ -49,6 +42,11 @@
     display: flex;
     align-items: center;
     gap: 6.265vw;
+
+
+    @include for-size(xxl) {
+      margin-top: 4.166vw;
+    }
 
     @include for-size(l) {
       gap: 0;
@@ -67,11 +65,10 @@
 
 
       &__header {
-        font-family: 'Roboto';
-        font-size: 30px;
+        font-family: 'Montserrat';
+        font-size: 32px;
         font-weight: 500;
-        line-height: 45px;
-        text-align: left;
+        line-height: 48px;
         margin-bottom: 32px;
       }
 
@@ -81,21 +78,16 @@
 
         li {
           display: flex;
-          font-family: 'Roboto';
-          font-size: 18px;
+          font-family: 'Rubik';
+          font-size: 24px;
           font-weight: 400;
-          line-height: 27px;
-          text-align: left;
+          line-height: 36px;
           margin-bottom: 33px;
 
 
           img {
-            margin-right: 16px;
+            margin-right: 12px;
           }
-
-          //@include for-size(xl) {
-          //  font-size: 20px;
-          //}
         }
       }
     }

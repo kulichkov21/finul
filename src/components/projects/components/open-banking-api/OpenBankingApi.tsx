@@ -2,8 +2,6 @@ import styles from './OpenBankingApi.module.scss';
 import React, {ReactElement} from "react";
 import projectImage from './../../../../assets/img/openBankingApi.svg';
 import listImg from './../../../../assets/img/check.svg'
-import Button from "../../../shared/button/Button";
-import {Link} from "react-scroll";
 
 const OpenBankingApi: React.FC = (): ReactElement => {
 
@@ -43,9 +41,6 @@ const OpenBankingApi: React.FC = (): ReactElement => {
                             })
                         }
                     </ul>
-                    <Link spy={true} smooth={true} duration={500} delay={100} to={'getConsultation'}>
-                    <Button caption={'Узнать подробнее'}/>
-                    </Link>
                 </article>
             </section>
         </div>
