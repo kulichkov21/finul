@@ -11,6 +11,8 @@
     margin-top: $defaultVerticalDistancePx;
     display: flex;
     padding-bottom: 50px;
+    width: $maxContentWidthVw;
+    max-width: $maxCiteWidthPx;
 
     @include for-size(xxl) {
       padding-bottom: 2.6vw;
@@ -21,8 +23,6 @@
   .common-info {
     @include common-block-params();
     margin-top: $defaultVerticalDistancePx;
-    width: $maxContentWidthVw;
-    max-width: $maxCiteWidthPx;
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid #D8D8D8;
@@ -58,8 +58,6 @@
   .contacts {
     @include common-block-params();
     margin-top: 50px;
-    width: 83.15vw;
-    max-width: $maxCiteWidthPx;
     border-bottom: 1px solid #D8D8D8;
     justify-content: center;
     gap: 20px;
@@ -97,8 +95,6 @@
     @include common-block-params();
     justify-content: center;
     margin-top: 50px;
-    width: $maxContentWidthVw;
-    max-width: $maxCiteWidthPx;
 
     @include for-size(xxl) {
       margin-top: 2.6vw;

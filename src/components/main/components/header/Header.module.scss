@@ -1,4 +1,4 @@
-@import "../../../../variables";
+@import "src/variables";
 
 .container {
   position: relative;
@@ -20,13 +20,11 @@
     .menu {
       display: flex;
       justify-content: space-between;
-      //min-width: 440px;
       gap: 24px;
 
       @include for-size(xxl) {
         gap: 1.25vw;
       }
-
 
       @include for-size(xs) {
         display: none;
