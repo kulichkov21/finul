@@ -31,7 +31,9 @@ export default class App extends React.Component<any, any> {
                 <Element name="questionsAndAnswers">
                     <InfoCards info={questionsAndAnswers} mode={'questionsAndAnswers'} header={'Вопросы и ответы'}/>
                 </Element>
+                <Element name="contacts">
                 <Footer/>
+                </Element>
             </div>
         );
     }

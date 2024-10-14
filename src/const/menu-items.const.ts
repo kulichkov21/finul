@@ -15,6 +15,6 @@ export const menuItems: MenuItemType[] = [
     },
     {
         caption: 'Контакты',
-        link: ''
+        link: 'contacts'
     },
 ];
