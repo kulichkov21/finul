@@ -4,6 +4,11 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: $defaultVerticalDistancePx;
+
+  @include for-size(xxl) {
+    margin-top: $defaultVerticalDistanceVw;
+  }
 
     .info {
       max-width: $maxCiteWidthPx;
@@ -11,6 +16,7 @@
       width: $maxContentWidthVw;
       display: flex;
       flex-direction: column;
+
 
       .header {
         @include h1();

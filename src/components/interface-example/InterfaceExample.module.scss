@@ -1,27 +1,17 @@
 @import "src/variables";
 
 .container {
-  margin-top: 100px;
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: $defaultVerticalDistancePx;
 
   @include for-size(xxl) {
-    margin-top: 5.2vw;
+    margin-top: $defaultVerticalDistanceVw;
   }
 
-  //@include for-size(xl) {
-  //  gap: 30px;
-  //  flex-direction: column;
-  //  margin-top: 50px;
-  //}
-
-  //@include for-size(m) {
-  //  margin: $verticalMarginMobile $horizontalMarginBase;
-  //}
 
   .content {
-    margin: 0 8.4375vw;
     max-width: $maxCiteWidthPx;
     width: $maxContentWidthVw;
     display: flex;
