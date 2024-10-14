@@ -9,6 +9,7 @@ import {allProcesses} from "./const/process.const";
 import {questionsAndAnswers} from "./const/questionsAndAnswers.const";
 import GetConsultation from "./components/get-consultation/GetConsultation";
 import Footer from "./components/footer/Footer";
+import InterfaceExample from "./components/interface-example/InterfaceExample";
 
 
 export default class App extends React.Component<any, any> {
@@ -18,6 +19,7 @@ export default class App extends React.Component<any, any> {
             <div className={styles.container}>
                 <Element name="aboutUs">
                     <Main/>
+                    <InterfaceExample/>
                     <HowToStart/>
                 </Element>
                 <Element name="projects">

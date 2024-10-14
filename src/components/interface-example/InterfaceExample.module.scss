@@ -1,0 +1,104 @@
+@import "src/variables";
+
+.container {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @include for-size(xxl) {
+    margin-top: 5.2vw;
+  }
+
+  //@include for-size(xl) {
+  //  gap: 30px;
+  //  flex-direction: column;
+  //  margin-top: 50px;
+  //}
+
+  //@include for-size(m) {
+  //  margin: $verticalMarginMobile $horizontalMarginBase;
+  //}
+
+  .content {
+    margin: 0 8.4375vw;
+    max-width: $maxCiteWidthPx;
+    width: 83.125vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include for-size(l) {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    .about-interface {
+      max-width: 677px;
+
+      @include for-size(l) {
+        max-width: 100%;
+      }
+
+      &__header {
+        @include h1();
+        margin-bottom: 15px;
+        color: #161C2D;
+        line-height: 58px;
+
+
+        //@include for-size(xl) {
+        //  text-align: center;
+        //}
+      }
+
+      &__caption {
+        font-family: 'Rubik';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        color: #656567;
+        margin-top: 15px;
+      }
+
+      &__arg-header {
+        font-family: 'Montserrat';
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.5px;
+        color: #161C2D;
+        margin-top: 32.5px;
+      }
+
+      &__arg-caption {
+        font-family: 'Rubik';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        margin-top: 11px;
+        color: #656567;
+      }
+    }
+
+    .images {
+      @include for-size(l) {
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        width: 659px;
+
+        @include for-size(xxl) {
+          width: 34.32vw;
+        }
+
+        @include for-size(l) {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
