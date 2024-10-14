@@ -10,6 +10,7 @@ import {questionsAndAnswers} from "./const/questionsAndAnswers.const";
 import GetConsultation from "./components/get-consultation/GetConsultation";
 import Footer from "./components/footer/Footer";
 import InterfaceExample from "./components/interface-example/InterfaceExample";
+import ProcessesAndQuestions from "./components/processes-and-questions/ProcessesAndQuestions";
 
 
 export default class App extends React.Component<any, any> {
@@ -24,8 +25,8 @@ export default class App extends React.Component<any, any> {
                 </Element>
                 <Element name="projects">
                     <Projects/>
-                    <InfoCards info={allProcesses} mode={'process'} header={'Наш процесс разработки'}/>
                 </Element>
+                <ProcessesAndQuestions/>
                 <Element name="getConsultation">
                     <GetConsultation/>
                 </Element>

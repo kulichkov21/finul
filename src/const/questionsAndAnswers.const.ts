@@ -3,22 +3,18 @@ import {ArgsType} from "../types/args.type";
 export const questionsAndAnswers: ArgsType[] = [
     {
         header: 'Где мы находимся?',
-        caption: '-',
+        caption: 'Бишкек',
     },
     {
         header: 'Сколько стоят услуги?',
-        caption: '-',
+        caption: '1 000 000 рублей',
     },
     {
         header: 'Сколько человек в команде?',
-        caption: '-',
+        caption: '25',
     },
     {
         header: 'Сколько времени занимает разработка?',
-        caption: '-',
-    },
-    {
-        header: 'Подписываете ли вы NDA?',
-        caption: '-',
+        caption: '5 месяцев',
     },
 ];

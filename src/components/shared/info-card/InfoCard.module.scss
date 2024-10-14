@@ -4,77 +4,65 @@
   width: calc((100% - 30px) / 2);
   padding: 50px;
   display: flex;
-  border-radius: 12px;
-  border: 1px solid #262626;
-  background: #F7F7F8;
-
-  @include for-size(xl) {
-    padding: 40px;
-  }
 
   @include for-size(l) {
-    padding: 20px 30px;
+    padding: 20px;
     width: 100%;
     height: auto;
-    min-height: unset;
+  }
+
+  .icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 30px;
   }
 
   .info {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     width: 100%;
 
-
-    @mixin header() {
-      font-family: 'Roboto';
-      display: flex;
-      align-items: center;
-      width: 100%;
-      text-align: left;
-      color: black;
-    }
-
-    &__header {
-      @include header();
+    @mixin header-base() {
+      font-family: 'Montserrat';
       font-size: 32px;
       font-weight: 500;
       line-height: 48px;
+      text-align: left;
+      color: white;
+      padding-bottom: 30px;
+    }
 
-      &__icon {
-        width: 40px;
-        height: 40px;
-        margin-right: 20px;
-      }
+    &__header {
+      @include header-base();
 
       &_qa {
-        @include header();
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 28.13px;
-        padding-bottom: 30px;
-        border-bottom: 1px solid #262626;
+        @include header-base();
       }
 
     }
 
-    @mixin caption() {
-      font-family: 'Roboto';
-      font-size: 18px;
-      line-height: 27px;
-      letter-spacing: -0.006em;
+    @mixin caption-base() {
+      display: inline-block;
+      width: 100%;
+      font-family: 'Montserrat';
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 29px;
+      letter-spacing: -0.20000000298023224px;
       text-align: left;
-      color: #656567;
+      color: white;
+      opacity: 0.65;
     }
 
     &__caption {
-      @include caption();
-      font-weight: 400;
+      @include caption-base();
 
       &_qa {
-        @include caption();
-        font-weight: 300;
+        @include caption-base();
+        padding-top: 30px;
+        border-top: 1px solid #FFFFFF;
       }
+
     }
   }
 

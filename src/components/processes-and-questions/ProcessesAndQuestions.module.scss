@@ -1,0 +1,19 @@
+@import 'src/variables';
+
+.container {
+  margin-top: $defaultVerticalDistancePx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(225deg, #313C59 0%, #161C2D 100%);
+
+
+  @include for-size(xxl) {
+    margin-top: $defaultVerticalDistanceVw;
+  }
+
+  .content {
+    max-width: $maxCiteWidthPx;
+    width: 83.125vw;
+  }
+}

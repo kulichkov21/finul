@@ -18,16 +18,13 @@ export default class InfoCard extends React.Component<InfoCardProps, any> {
 
     render() {
     const headerClassLink = this.props.mode === 'questionsAndAnswers' ? 'info__header_qa' : 'info__header';
-    const captionClassLink = this.props.mode === 'questionsAndAnswers' ? 'info__caption__qa' : 'info__caption';
+    const captionClassLink = this.props.mode === 'questionsAndAnswers' ? 'info__caption_qa' : 'info__caption';
         return (
             <article className={styles.container}>
+                {this.props.mode === 'process' ? <img className={styles.icon} src={icons.get(this.props.info.header)} alt="icon"/> : null}
                 <div className={styles.info}>
-                    <h4 className={styles[headerClassLink]}>
-                        {this.props.mode === 'process' ?
-                            <img className={styles['info__header__icon']} src={icons.get(this.props.info.header)}
-                                 alt="icon"/> : null}
-                        {this.props.info.header}</h4>
-                    <p className={styles['info__caption']}>{this.props.info.caption}</p>
+                    <h4 className={styles[headerClassLink]}>{this.props.info.header}</h4>
+                    <p className={styles[captionClassLink]}>{this.props.info.caption}</p>
                 </div>
             </article>
         )
