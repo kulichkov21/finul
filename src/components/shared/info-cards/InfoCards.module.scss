@@ -18,6 +18,10 @@
     text-align: center;
     margin-bottom: 80px;
     color: white;
+
+    @include for-size(xxl) {
+      margin-bottom: 4.166vw;
+    }
   }
 
   .info-cards-info {

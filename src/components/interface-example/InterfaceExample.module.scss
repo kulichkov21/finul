@@ -39,9 +39,9 @@
         line-height: 58px;
 
 
-        //@include for-size(xl) {
-        //  text-align: center;
-        //}
+        @include for-size(l) {
+          text-align: center;
+        }
       }
 
       &__caption {

@@ -8,13 +8,13 @@
 
   .content {
     position: relative;
-    margin: 70px 8.4375vw;
+    margin: 70px 0;
     max-width: $maxCiteWidthPx;
-    width: 100%;
+    width: $maxContentWidthVw;
     padding: 80px;
 
     @include for-size(xxl) {
-      margin: 3.645vw 8.4375vw;
+      margin: 3.645vw;
       padding: 4.166vw;
     }
 
