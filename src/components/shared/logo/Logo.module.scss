@@ -27,6 +27,7 @@
 
     &_black {
       @include caption-base();
+      font-weight: 900;
       color: #161C2D;
 
       &_can-hide {

@@ -21,7 +21,7 @@ function ErrorModal(props: ErrorModalProps): ReactElement {
         <div className={styles.info}>
             Невозможно отправить сообщение, для решения вопроса напишите нам:
             <a className={styles['mail-to']}
-               href="mailto:contact@businesscity.ru">contact@businesscity.ru</a>
+               href="mailto:contact@finul.kg">contact@finul.kg</a>
         </div>
         <div className={styles.footer}>
             <Button onClick={onCloseHandler} caption='Закрыть'/>

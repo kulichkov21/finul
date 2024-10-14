@@ -25,9 +25,9 @@ const Footer: React.FC = (): ReactElement => {
             </section>
 
             <section className={styles.contacts}>
-                <a className={styles['contacts__item']} href="mailto:contact@businesscity.ru">
+                <a className={styles['contacts__item']} href="mailto:contact@finul.kg">
                     <img src={mailLogo} alt="mail"/>
-                    contact@businesscity.ru
+                    contact@finul.kg
                 </a>
                 <a className={styles['contacts__item']} href="callto:+996770365303">
                     <img src={phoneLogo} alt="mail"/>

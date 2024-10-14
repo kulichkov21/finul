@@ -145,7 +145,7 @@ const GetConsultation: React.FC = (): ReactElement => {
                             обсудить ваши идеи, позвоните или напишите нам.</p>
                         <p>
                             <a className={styles['contacts__mail-to']}
-                               href="mailto:contact@businesscity.ru">contact@businesscity.ru</a>
+                               href="mailto:contact@finul.kg">contact@finul.kg</a>
                         </p>
                         <p>
                             <a className={styles['contacts__phone']} href="callto:+996770365303">+996 770 365 303</a>
