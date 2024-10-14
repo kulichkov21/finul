@@ -9,7 +9,6 @@ type LogoProps = {
 
 const Logo: React.FC<LogoProps> = (props: LogoProps): ReactElement =>  {
     let captionClassName = ('caption_' + `${props.fontColor}`) + (props.canHideCaption ? '_can-hide' : '');
-    console.log(captionClassName)
     return (
         <a className={styles.container}>
             <img className={styles.img} src={logo} alt="logo"/>

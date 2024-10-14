@@ -10,7 +10,7 @@ export default class InfoCards extends React.Component<InfoCardsProps, any> {
                 <h2 className={styles.header}>{this.props.header}</h2>
                 <section className={styles['info-cards-info']}>
                     {
-                        this.props.info.map((process) => <InfoCard info={process} mode={this.props.mode}/>)
+                        this.props.info.map((process, index) => <InfoCard info={process} index={index} mode={this.props.mode}/>)
                     }
                 </section>
             </div>

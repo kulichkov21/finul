@@ -2,6 +2,7 @@
 
 .container {
   margin-top: $defaultVerticalDistancePx;
+  padding-bottom: $defaultVerticalDistancePx;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -10,6 +11,7 @@
 
   @include for-size(xxl) {
     margin-top: $defaultVerticalDistanceVw;
+    padding-bottom: $defaultVerticalDistanceVw;
   }
 
   .content {

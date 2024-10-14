@@ -29,7 +29,7 @@
       line-height: 48px;
       text-align: left;
       color: white;
-      padding-bottom: 30px;
+      margin-bottom: 30px;
     }
 
     &__header {
@@ -37,13 +37,19 @@
 
       &_qa {
         @include header-base();
+
+        &_big {
+          @include header-base();
+
+          display: inline-block;
+          min-height: 96px;
+          margin-bottom: 30px;
+        }
       }
 
     }
 
     @mixin caption-base() {
-      display: inline-block;
-      width: 100%;
       font-family: 'Montserrat';
       font-size: 20px;
       font-weight: 400;
@@ -61,8 +67,13 @@
         @include caption-base();
         padding-top: 30px;
         border-top: 1px solid #FFFFFF;
+
       }
 
+
+      //@include for-size(xxl) {
+      //  font-size: 18px;
+      //}
     }
   }
 

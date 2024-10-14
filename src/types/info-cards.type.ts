@@ -9,6 +9,7 @@ export type InfoCardsProps = {
 
 export type InfoCardProps = {
     info: ArgsType;
-    mode: 'process' | 'questionsAndAnswers'
+    mode: 'process' | 'questionsAndAnswers',
+    index?: number;
 }
 

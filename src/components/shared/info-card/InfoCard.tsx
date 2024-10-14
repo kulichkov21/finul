@@ -17,7 +17,9 @@ const icons = new Map<string, string>([
 export default class InfoCard extends React.Component<InfoCardProps, any> {
 
     render() {
-    const headerClassLink = this.props.mode === 'questionsAndAnswers' ? 'info__header_qa' : 'info__header';
+    let headerClassLink = this.props.mode === 'questionsAndAnswers' ? 'info__header_qa' : 'info__header';
+    headerClassLink = this.props.mode === 'questionsAndAnswers' && (this.props?.index && this.props.index > 1) ? headerClassLink + '_big' : headerClassLink;
+
     const captionClassLink = this.props.mode === 'questionsAndAnswers' ? 'info__caption_qa' : 'info__caption';
         return (
             <article className={styles.container}>
