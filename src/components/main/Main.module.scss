@@ -18,7 +18,7 @@
   .main {
     position: relative;
     z-index: 2;
-    width: 83.125vw;
+    width: $maxContentWidthVw;
     max-width: $maxCiteWidthPx;
     display: flex;
     justify-content: space-between;

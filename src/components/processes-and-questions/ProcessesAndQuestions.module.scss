@@ -16,6 +16,6 @@
 
   .content {
     max-width: $maxCiteWidthPx;
-    width: 83.125vw;
+    width: $maxContentWidthVw;
   }
 }
