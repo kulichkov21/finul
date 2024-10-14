@@ -1,29 +1,25 @@
 @import "src/variables";
 
 .container {
-  width: 100%;
   display: flex;
   justify-content: center;
-
-  .content {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: $maxCiteWidthPx;
-    align-items: center;
-    margin: $defaultVerticalDistancePx 8.4375vw 0;
-
-    @include for-size(xxl) {
-      margin-top: $defaultVerticalDistanceVw
-    }
+  width: 100%;
 
     .info {
-      width: 100%;
+      max-width: $maxCiteWidthPx;
+      align-items: center;
+      margin: $defaultVerticalDistancePx 0;
+      width: 83.125vw;
       display: flex;
       flex-direction: column;
 
+      @include for-size(xxl) {
+        margin-top: $defaultVerticalDistanceVw;
+      }
+
       .header {
         @include h1();
+        line-height: 58px;
         text-align: center;
         margin-bottom: 80px;
 
@@ -36,28 +32,27 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        gap: 50px;
 
         @include for-size(xl) {
           flex-direction: column;
           align-items: center;
+          gap: 25px;
         }
 
         .step-container {
-          max-width: 465px;
-          width: 27.67vw;
+          max-width: 498px;
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding: 0 5px;
-
 
           @include for-size(xl) {
             width: 100%;
             max-width: 100%;
             flex-direction: row;
             align-items: center;
-            gap: 15px;
             padding: 0;
+            gap: 25px;
           }
 
           .circle-container {
@@ -92,7 +87,7 @@
 
             &__header {
               margin: 30px 0 20px 0;
-              font-family: 'Roboto';
+              font-family: 'Montserrat';
               font-size: 32px;
               font-weight: 500;
               line-height: 48px;
@@ -101,7 +96,7 @@
             }
 
             &__caption {
-              font-family: 'Roboto';
+              font-family: 'Rubik';
               font-size: 18px;
               font-weight: 400;
               line-height: 27px;
@@ -117,11 +112,5 @@
       }
     }
   }
-
-  .line {
-    width: 0;
-    border-right: 1px solid #262626;
-  }
-}
 
 
