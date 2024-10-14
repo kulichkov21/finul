@@ -8,14 +8,9 @@
     .info {
       max-width: $maxCiteWidthPx;
       align-items: center;
-      margin: $defaultVerticalDistancePx 0;
       width: 83.125vw;
       display: flex;
       flex-direction: column;
-
-      @include for-size(xxl) {
-        margin-top: $defaultVerticalDistanceVw;
-      }
 
       .header {
         @include h1();
