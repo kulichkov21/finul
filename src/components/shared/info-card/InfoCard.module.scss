@@ -22,7 +22,8 @@
     flex-direction: column;
     width: 100%;
 
-    @mixin header-base() {
+
+    &__header {
       font-family: 'Montserrat';
       font-size: 32px;
       font-weight: 500;
@@ -30,26 +31,15 @@
       text-align: left;
       color: white;
       margin-bottom: 30px;
-    }
-
-    &__header {
-      @include header-base();
 
       &_qa {
-        @include header-base();
-
-        &_big {
-          @include header-base();
-
-          display: inline-block;
-          min-height: 96px;
-          margin-bottom: 30px;
-        }
+        display: inline-block;
+        min-height: 96px;
       }
 
     }
 
-    @mixin caption-base() {
+    &__caption {
       font-family: 'Montserrat';
       font-size: 20px;
       font-weight: 400;
@@ -58,13 +48,8 @@
       text-align: left;
       color: white;
       opacity: 0.65;
-    }
-
-    &__caption {
-      @include caption-base();
 
       &_qa {
-        @include caption-base();
         padding-top: 30px;
         border-top: 1px solid #FFFFFF;
       }

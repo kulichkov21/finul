@@ -17,16 +17,15 @@ const icons = new Map<string, string>([
 export default class InfoCard extends React.Component<InfoCardProps, any> {
 
     render() {
-    let headerClassLink = this.props.mode === 'questionsAndAnswers' ? 'info__header_qa' : 'info__header';
-    headerClassLink = this.props.mode === 'questionsAndAnswers' && (this.props?.index && this.props.index > 1) ? headerClassLink + '_big' : headerClassLink;
-
-    const captionClassLink = this.props.mode === 'questionsAndAnswers' ? 'info__caption_qa' : 'info__caption';
+        const headerClassLink = `${styles['info__header']} ${this.props.mode === 'questionsAndAnswers' && this.props?.index && this.props.index > 1 ? styles['info__header_qa'] : null}`
+        const captionClassLink = `${styles['info__caption']} ${this.props.mode === 'questionsAndAnswers' ? styles['info__caption_qa'] : null}`
         return (
             <article className={styles.container}>
-                {this.props.mode === 'process' ? <img className={styles.icon} src={icons.get(this.props.info.header)} alt="icon"/> : null}
+                {this.props.mode === 'process' ?
+                    <img className={styles.icon} src={icons.get(this.props.info.header)} alt="icon"/> : null}
                 <div className={styles.info}>
-                    <h4 className={styles[headerClassLink]}>{this.props.info.header}</h4>
-                    <p className={styles[captionClassLink]}>{this.props.info.caption}</p>
+                    <h4 className={headerClassLink}>{this.props.info.header}</h4>
+                    <p className={captionClassLink}>{this.props.info.caption}</p>
                 </div>
             </article>
         )

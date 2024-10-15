@@ -7,7 +7,7 @@ type LogoProps = {
 }
 
 const Logo: React.FC<LogoProps> = (props: LogoProps): ReactElement => {
-    let captionClassName = `${styles['caption']} ${props.mode === 'header' ? styles['caption_header'] : styles['caption_footer']}`
+    const captionClassName = `${styles['caption']} ${props.mode === 'header' ? styles['caption_header'] : styles['caption_footer']}`
     return (
         <a className={styles.container}>
             <img className={styles.img} src={logo} alt="logo"/>
