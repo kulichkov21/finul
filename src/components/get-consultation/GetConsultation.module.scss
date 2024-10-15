@@ -51,7 +51,8 @@
         max-width: unset;
       }
 
-      @mixin base-input() {
+
+      .input {
         padding: 8px 12px 8px 12px;
         border-radius: 2px;
         border: 1px solid #D9D9D9;
@@ -63,28 +64,14 @@
         width: calc((100% - 14px) / 2);
         margin-bottom: 20px;
         transition: outline .1s ease-in;
-      }
 
-      @mixin big-input() {
-        @include base-input();
-        width: 100%;
-      }
-
-      .base-input {
-        @include base-input();
+        &_big {
+          width: 100%;
+        }
 
         &_error {
-          @include base-input();
           outline: 2px solid red;
         }
-
-        &:focus-visible {
-          outline: 2px solid #161C2D;
-        }
-      }
-
-      .big-input {
-        @include big-input();
 
         &:focus-visible {
           outline: 2px solid #161C2D;
@@ -108,19 +95,15 @@
           text-decoration: underline;
         }
 
-        @mixin checkbox() {
+
+        .checkbox {
           width: 16px;
           height: 16px;
           border-radius: 2px;
           border: 1px solid #D9D9D9;
           transition: outline .1s ease-in;
-        }
-
-        .checkbox {
-          @include checkbox();
 
           &_error {
-            @include checkbox();
             outline: 2px solid red;
           }
         }

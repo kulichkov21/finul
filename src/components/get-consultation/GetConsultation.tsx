@@ -110,24 +110,24 @@ const GetConsultation: React.FC = (): ReactElement => {
                 <div className={styles['get-consultation-container']}>
                     <form>
                         <input name='name' value={formState.input.name} onChange={onFormChange} placeholder="Ваше имя"
-                               className={wasButtonClickedState && formState.errors.name ? styles['base-input_error'] : styles['base-input']}
+                               className={wasButtonClickedState && formState.errors.name ? `${styles['input']} ${styles['input_error']}` : styles['input']}
                                type="text"/>
                         <input name='companyName' value={formState.input.companyName} onChange={onFormChange}
-                               className={wasButtonClickedState && formState.errors.companyName ? styles['base-input_error'] : styles['base-input']}
+                               className={wasButtonClickedState && formState.errors.companyName ? `${styles['input']} ${styles['input_error']}` : styles['input']}
                                placeholder="Ваша компания" type="text"/>
                         <input name='email' value={formState.input.email} onChange={onFormChange}
-                               className={wasButtonClickedState && formState.errors.email ? styles['base-input_error'] : styles['base-input']}
+                               className={wasButtonClickedState && formState.errors.email ? `${styles['input']} ${styles['input_error']}` : styles['input']}
                                placeholder="Электронная почта" type="email"/>
                         <input
                             name='phoneNumber' value={formState.input.phoneNumber} onChange={onFormChange}
-                            className={wasButtonClickedState && formState.errors.phoneNumber ? styles['base-input_error'] : styles['base-input']}
+                            className={wasButtonClickedState && formState.errors.phoneNumber ? `${styles['input']} ${styles['input_error']}` : styles['input']}
                             placeholder="Номер телефона" ref={inputPhoneRef}
                             type="text"/>
                         <input name='question' value={formState.input.question} onChange={onFormChange}
-                               placeholder="Ваши вопросы или идеи" className={styles['big-input']} type="text"/>
+                               placeholder="Ваши вопросы или идеи" className={`${styles['input']} ${styles['input_big']}`} type="text"/>
                         <label className={styles.accept}>
                             <input name='agreeTheRules'
-                                   className={wasButtonClickedState && formState.errors.agreeTheRules ? styles['checkbox_error'] : styles['checkbox']}
+                                   className={wasButtonClickedState && formState.errors.agreeTheRules ? `${styles['checkbox']} ${styles['checkbox_error']}` : styles['checkbox']}
                                    value={formState.input.agreeTheRules === true ? 'true' : 'false'}
                                    onChange={onFormChange} type="checkbox"/>
                             Даю согласие на <span>обработку персональных данных</span>
