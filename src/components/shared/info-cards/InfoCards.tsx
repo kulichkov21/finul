@@ -4,9 +4,10 @@ import InfoCard from "../info-card/InfoCard";
 import {InfoCardsProps} from "../../../types/info-cards.type";
 
 export default class InfoCards extends React.Component<InfoCardsProps, any> {
+    private containerClassList = `${styles.container} ${this.props.mode === 'process' ? styles['container_small-margin'] : null}`
     render() {
         return (
-            <div className={styles.container}>
+            <div className={this.containerClassList}>
                 <h2 className={styles.header}>{this.props.header}</h2>
                 <section className={styles['info-cards-info']}>
                     {

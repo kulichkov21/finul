@@ -1,8 +1,8 @@
 @import 'src/variables';
 
 .container {
-  margin-top: $defaultVerticalDistancePx;
-  padding-bottom: $defaultVerticalDistancePx;
+  margin-top: 70px;
+  padding: 80px 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -10,8 +10,8 @@
 
 
   @include for-size(xxl) {
-    margin-top: $defaultVerticalDistanceVw;
-    padding-bottom: $defaultVerticalDistanceVw;
+    margin-top: 3.645vw;
+    padding: 4.166vw 0;
   }
 
   .content {

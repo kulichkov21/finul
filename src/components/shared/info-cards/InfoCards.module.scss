@@ -12,6 +12,10 @@
     margin-top: $defaultVerticalDistanceVw;
   }
 
+  &_small-margin {
+    margin-top: 0;
+  }
+
   .header {
     @include h1();
     line-height: 58px;
