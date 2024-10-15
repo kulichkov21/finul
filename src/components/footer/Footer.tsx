@@ -11,7 +11,7 @@ const Footer: React.FC = (): ReactElement => {
     return (
         <footer className={styles.container}>
             <section className={styles['common-info']}>
-                <Logo canHideCaption={false} fontColor={'black'}/>
+                <Logo mode={'footer'}/>
                 <nav className={styles['common-info__navigation']}>
                     {
                         menuItems.map((item) => {
@@ -33,7 +33,7 @@ const Footer: React.FC = (): ReactElement => {
                     <img src={phoneLogo} alt="mail"/>
                     +996 770 365 303
                 </a>
-                <span className={styles['contacts__item_non-clickable']}>
+                <span className={`${styles['contacts__item']} ${styles['contacts__item_non-clickable']}`}>
                     <img src={locationLogo} alt="mail"/>
                     Бишкек
                 </span>

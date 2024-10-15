@@ -13,7 +13,8 @@
     height: 40px;
   }
 
-  @mixin caption-base() {
+
+  .caption {
     font-family: 'Rubik';
     font-size: 24px;
     font-weight: 700;
@@ -21,35 +22,18 @@
     letter-spacing: -0.13px;
     text-align: left;
     margin-left: 16px;
-  }
 
-  .caption {
+    &_header {
+      color: white;
 
-    &_black {
-      @include caption-base();
-      font-weight: 900;
-      color: #161C2D;
-
-      &_can-hide {
-        @include caption-base();
-        color: #161C2D;
-        @include for-size(l) {
-          display: none;
-        }
+      @include for-size(l) {
+        display: none;
       }
     }
 
-    &_white {
-      @include caption-base();
-      color: white;
-
-      &_can-hide {
-        @include caption-base();
-        color: white;
-        @include for-size(m) {
-          display: none;
-        }
-      }
+    &_footer {
+      color: #161C2D;
+      font-weight: 900;
     }
 
   }

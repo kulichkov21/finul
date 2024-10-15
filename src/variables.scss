@@ -6,20 +6,9 @@ $minifiedVerticalDistance: 50px;
 $defaultHorizontalDistance: 162px;
 $minifiedHorizontalDistance: 15px;
 $maxContentWidthVw: 83.125vw;
-
-
-$mainHeader1FontSize: 48px;
-$minifiedHeader1FontSize: 32px;
-$mainHeader1LineHeight: 65px;
-$minifiedHeader1LineHeight: 38px;
-$mainHeader2FontSize: 32px;
-$mainHeader2LineHeight: 48px;
-$mainHeader3FontSize: 30px;
-$mainHeader3LineHeight: 45px;
-$mainHeader4FontSize: 24px;
-$mainHeader4LineHeight: 28px;
-
 $maxCiteWidthPx: 1596px;
+$mainHeader1FontSize: 48px;
+$mainHeader1LineHeight: 65px;
 
 
 //colors
@@ -48,21 +37,6 @@ $backgroundColor2: #3363FF08;
   //@include for-size(xl) {
   //  letter-spacing: 0px;
   //}
-}
-
-@mixin descriptionText1() {
-  font-family: 'Roboto';
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  color: #656567;
-}
-
-@mixin horizontalMargin() {
-  @include for-size(xl) {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 

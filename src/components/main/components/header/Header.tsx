@@ -34,7 +34,7 @@ export default class Header extends React.Component<HeaderProps, any> {
         return (
             <div className={styles.container}>
                 <header className={styles.header}>
-                    <Logo canHideCaption={true} fontColor={'white'}/>
+                    <Logo mode={'header'}/>
                     <nav className={styles.menu}>
                         {
                             menuItems.map((item) => {
